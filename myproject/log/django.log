@@ -1,0 +1,32 @@
+Watching for file changes with StatReloader
+C:\Users\anton\PycharmProjects\django\myproject\myapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\anton\PycharmProjects\django\myproject\myapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /prefix/about/ HTTP/1.1" 200 27
+"GET /prefix/ HTTP/1.1" 200 13
+"GET /prefix HTTP/1.1" 301 0
+"GET /prefix/ HTTP/1.1" 200 13
+C:\Users\anton\PycharmProjects\django\myproject\myproject\settings.py changed, reloading.
+Watching for file changes with StatReloader
+Index page accessed
+"GET /prefix/ HTTP/1.1" 200 13
+"GET /prefix/about HTTP/1.1" 301 0
+Error in about page: division by zero
+Traceback (most recent call last):
+  File "C:\Users\anton\PycharmProjects\django\myproject\myapp\views.py", line 16, in about
+    result = 1 / 0
+             ~~^~~
+ZeroDivisionError: division by zero
+"GET /prefix/about/ HTTP/1.1" 200 27
+C:\Users\anton\PycharmProjects\django\myproject\myproject\settings.py changed, reloading.
+INFO 2023-08-27 21:31:42,367 autoreload 9100 10772 Watching for file changes with StatReloader
+INFO 2023-08-27 21:31:55,664 views 9100 3164 Index page accessed
+INFO 2023-08-27 21:31:55,665 basehttp 9100 3164 "GET /prefix/ HTTP/1.1" 200 13
+ERROR 2023-08-27 21:32:02,832 views 9100 3164 Error in about page: division by zero
+Traceback (most recent call last):
+  File "C:\Users\anton\PycharmProjects\django\myproject\myapp\views.py", line 16, in about
+    result = 1 / 0
+             ~~^~~
+ZeroDivisionError: division by zero
+INFO 2023-08-27 21:32:02,833 basehttp 9100 3164 "GET /prefix/about/ HTTP/1.1" 200 27
