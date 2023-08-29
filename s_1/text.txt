@@ -1,0 +1,52 @@
+mkdir django-->cd django-->python3 -m venv venv -->venv/bin/activate-->pip install django
+
+django-admin startapp seminar_1
+точно рабочий
+
+ток его в INSTALLED_APPS добавить бы
+
+When DEBUG is True and ALLOWED_HOSTS is empty, the host is validated against ['.localhost', '127.0.0.1', '[::1]'].
+
+from . import views
+
+https://drive.google.com/file/d/1U7ECWk7DIEcmBjRGwxWFT-KhdweNXKEk/view?usp=sharing
+
+('TAILS', 'HEADS')[randint(0, 1)]
+
+LOGGING = {
+    'version': 1,
+    'disable_existing_loggers': False,
+    'formatters': {
+        'simple': {
+            'format': '%(levelname)s %(message)s'
+        },
+        'verbose': {
+            'format': '{levelname} {asctime} {module} {process} {thread} {message}',
+            'style': '{',
+        },
+    },
+    'handlers': {
+        'console': {
+            'class': 'logging.StreamHandler',
+            'formatter': 'verbose',
+        },
+        'file': {
+            'class': 'logging.FileHandler',
+            'filename': './log/django.log',  # 'filename': '.log/django.log'
+            'formatter': 'verbose',
+        },
+    },
+    'loggers': {
+        'django': {
+            'handlers': ['console', 'file'],
+            'level': 'INFO',
+        },
+        'gb_myapp': {
+            'handlers': ['console', 'file'],  # 'handlers': ['console', 'file'],
+            'level': 'DEBUG',
+            'propagate': True,
+        },
+    },
+}
+
+https://docs.djangoproject.com/en/4.2/topics/async/

@@ -30,3 +30,24 @@ Traceback (most recent call last):
              ~~^~~
 ZeroDivisionError: division by zero
 INFO 2023-08-27 21:32:02,833 basehttp 9100 3164 "GET /prefix/about/ HTTP/1.1" 200 27
+INFO 2023-08-28 19:35:36,650 autoreload 11288 3000 Watching for file changes with StatReloader
+WARNING 2023-08-28 19:35:41,539 log 11288 7336 Not Found: /
+WARNING 2023-08-28 19:35:41,539 basehttp 11288 7336 "GET / HTTP/1.1" 404 2169
+WARNING 2023-08-28 19:35:41,576 log 11288 7336 Not Found: /favicon.ico
+WARNING 2023-08-28 19:35:41,576 basehttp 11288 7336 "GET /favicon.ico HTTP/1.1" 404 2220
+INFO 2023-08-28 19:35:55,920 views 11288 7336 Index page accessed
+INFO 2023-08-28 19:35:55,921 basehttp 11288 7336 "GET /prefix/ HTTP/1.1" 200 13
+INFO 2023-08-28 19:45:35,657 autoreload 11288 3000 C:\Users\anton\PycharmProjects\django\myproject\myproject\urls.py changed, reloading.
+INFO 2023-08-28 19:45:36,147 autoreload 2252 3876 Watching for file changes with StatReloader
+WARNING 2023-08-28 19:45:51,317 log 2252 7876 Not Found: /prefix/
+WARNING 2023-08-28 19:45:51,317 basehttp 2252 7876 "GET /prefix/ HTTP/1.1" 404 2429
+WARNING 2023-08-28 19:45:55,538 log 2252 7876 Not Found: /prefix/
+WARNING 2023-08-28 19:45:55,539 basehttp 2252 7876 "GET /prefix/ HTTP/1.1" 404 2429
+INFO 2023-08-28 19:45:57,753 views 2252 7876 Index page accessed
+INFO 2023-08-28 19:45:57,754 basehttp 2252 7876 "GET / HTTP/1.1" 200 13
+INFO 2023-08-29 19:14:21,184 autoreload 11008 4576 Watching for file changes with StatReloader
+INFO 2023-08-29 19:15:01,101 views 11008 10708 Index page accessed
+INFO 2023-08-29 19:15:01,102 basehttp 11008 10708 "GET / HTTP/1.1" 200 13
+WARNING 2023-08-29 19:15:01,136 log 11008 10708 Not Found: /favicon.ico
+WARNING 2023-08-29 19:15:01,136 basehttp 11008 10708 "GET /favicon.ico HTTP/1.1" 404 2441
+INFO 2023-08-29 19:22:00,221 autoreload 11592 10748 Watching for file changes with StatReloader
