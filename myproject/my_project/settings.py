@@ -130,6 +130,10 @@ LOGGING = {
             'format': '{levelname} {asctime} {module} {process} {thread} {message}',
             'style': '{',
         },
+        'verbose_2': {
+            'format': 'verbose_2 {levelname} {asctime} {module} {process} {thread} {message}',
+            'style': '{',
+        },
         'simple': {
             'format': '%(levelname)s %(message)s'
         },
@@ -144,14 +148,29 @@ LOGGING = {
             'filename': './log/django.log',
             'formatter': 'verbose',  # добавлен параметр formatter
         },
+        'file_hw1': {
+            'class': 'logging.FileHandler',
+            'filename': './hw_1_app/log/hw_1.log',
+            'formatter': 'verbose',  # добавлен параметр formatter
+        },
+        'file_s1': {
+            'class': 'logging.FileHandler',
+            'filename': './s1app/log/s1app.log',
+            'formatter': 'verbose_2',  # добавлен параметр formatter
+        },
     },
     'loggers': {
         'django': {
             'handlers': ['console', 'file'],
             'level': 'INFO',
         },
-        'myapp': {
-            'handlers': ['console', 'file'],
+        'hw_1_app': {
+            'handlers': ['console', 'file_hw1'],
+            'level': 'DEBUG',
+            'propagate': True,
+        },
+        's1app': {
+            'handlers': ['console', 'file_s1'],
             'level': 'DEBUG',
             'propagate': True,
         },

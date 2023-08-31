@@ -331,3 +331,140 @@ INFO 2023-08-30 15:25:56,258 views 3012 4216 Home task page -> access
 INFO 2023-08-30 15:25:56,259 basehttp 3012 4216 "GET /hw/home_task/ HTTP/1.1" 200 752
 INFO 2023-08-30 15:26:04,814 views 3012 12840 Homework index page -> access
 INFO 2023-08-30 15:26:04,815 basehttp 3012 12840 "GET /hw/ HTTP/1.1" 200 2710
+INFO 2023-08-31 09:16:58,901 autoreload 12916 11344 Watching for file changes with StatReloader
+INFO 2023-08-31 09:17:23,511 basehttp 12916 7424 "GET / HTTP/1.1" 200 13
+WARNING 2023-08-31 09:17:24,018 log 12916 7424 Not Found: /favicon.ico
+WARNING 2023-08-31 09:17:24,018 basehttp 12916 7424 "GET /favicon.ico HTTP/1.1" 404 2648
+INFO 2023-08-31 09:17:32,714 basehttp 12916 7424 "GET /s1 HTTP/1.1" 301 0
+INFO 2023-08-31 09:17:32,722 basehttp 12916 6796 "GET /s1/ HTTP/1.1" 200 16
+INFO 2023-08-31 09:17:47,283 basehttp 12916 6796 "GET /s1/heads HTTP/1.1" 301 0
+ERROR 2023-08-31 09:17:47,549 log 12916 12768 Internal Server Error: /s1/heads/
+Traceback (most recent call last):
+  File "C:\PY\django\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PY\django\venv\Lib\site-packages\django\utils\deprecation.py", line 136, in __call__
+    response = self.process_response(request, response)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PY\django\venv\Lib\site-packages\django\middleware\clickjacking.py", line 27, in process_response
+    if response.get("X-Frame-Options") is not None:
+       ^^^^^^^^^^^^
+AttributeError: 'str' object has no attribute 'get'
+ERROR 2023-08-31 09:17:47,557 basehttp 12916 12768 "GET /s1/heads/ HTTP/1.1" 500 63292
+ERROR 2023-08-31 09:18:32,813 log 12916 12768 Internal Server Error: /s1/cube/
+Traceback (most recent call last):
+  File "C:\PY\django\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PY\django\venv\Lib\site-packages\django\utils\deprecation.py", line 136, in __call__
+    response = self.process_response(request, response)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PY\django\venv\Lib\site-packages\django\middleware\clickjacking.py", line 27, in process_response
+    if response.get("X-Frame-Options") is not None:
+       ^^^^^^^^^^^^
+AttributeError: 'int' object has no attribute 'get'
+ERROR 2023-08-31 09:18:32,821 basehttp 12916 12768 "GET /s1/cube/ HTTP/1.1" 500 63244
+INFO 2023-08-31 09:20:57,342 autoreload 12916 11344 C:\PY\django\myproject\s1app\views.py changed, reloading.
+INFO 2023-08-31 09:20:59,243 autoreload 2808 6856 Watching for file changes with StatReloader
+INFO 2023-08-31 09:21:02,876 basehttp 2808 9084 "GET /s1/cube/ HTTP/1.1" 200 1
+INFO 2023-08-31 09:21:05,294 basehttp 2808 9084 "GET /s1/cube/ HTTP/1.1" 200 1
+INFO 2023-08-31 09:21:06,110 basehttp 2808 9084 "GET /s1/cube/ HTTP/1.1" 200 1
+INFO 2023-08-31 09:21:06,614 basehttp 2808 9084 "GET /s1/cube/ HTTP/1.1" 200 1
+INFO 2023-08-31 09:21:07,107 basehttp 2808 9084 "GET /s1/cube/ HTTP/1.1" 200 1
+INFO 2023-08-31 09:21:07,670 basehttp 2808 9084 "GET /s1/cube/ HTTP/1.1" 200 1
+INFO 2023-08-31 09:21:15,648 basehttp 2808 9084 "GET /s1/number/ HTTP/1.1" 200 2
+INFO 2023-08-31 09:21:18,030 basehttp 2808 9084 "GET /s1/number/ HTTP/1.1" 200 1
+INFO 2023-08-31 09:21:18,750 basehttp 2808 9084 "GET /s1/number/ HTTP/1.1" 200 2
+INFO 2023-08-31 09:21:19,254 basehttp 2808 9084 "GET /s1/number/ HTTP/1.1" 200 2
+INFO 2023-08-31 09:21:19,726 basehttp 2808 9084 "GET /s1/number/ HTTP/1.1" 200 2
+INFO 2023-08-31 09:21:20,126 basehttp 2808 9084 "GET /s1/number/ HTTP/1.1" 200 2
+INFO 2023-08-31 09:21:20,467 basehttp 2808 9084 "GET /s1/number/ HTTP/1.1" 200 2
+INFO 2023-08-31 09:21:20,709 basehttp 2808 9084 "GET /s1/number/ HTTP/1.1" 200 2
+INFO 2023-08-31 09:21:20,926 basehttp 2808 9084 "GET /s1/number/ HTTP/1.1" 200 3
+INFO 2023-08-31 09:21:21,139 basehttp 2808 9084 "GET /s1/number/ HTTP/1.1" 200 2
+INFO 2023-08-31 09:21:21,340 basehttp 2808 9084 "GET /s1/number/ HTTP/1.1" 200 2
+INFO 2023-08-31 09:21:21,509 basehttp 2808 9084 "GET /s1/number/ HTTP/1.1" 200 2
+INFO 2023-08-31 09:21:21,708 basehttp 2808 9084 "GET /s1/number/ HTTP/1.1" 200 2
+INFO 2023-08-31 09:21:21,888 basehttp 2808 9084 "GET /s1/number/ HTTP/1.1" 200 2
+INFO 2023-08-31 09:21:22,072 basehttp 2808 9084 "GET /s1/number/ HTTP/1.1" 200 2
+INFO 2023-08-31 09:21:22,225 basehttp 2808 9084 "GET /s1/number/ HTTP/1.1" 200 2
+INFO 2023-08-31 09:21:30,274 basehttp 2808 9084 "GET /s1/heads/ HTTP/1.1" 200 5
+INFO 2023-08-31 09:21:32,726 basehttp 2808 9084 "GET /s1/heads/ HTTP/1.1" 200 5
+INFO 2023-08-31 09:21:33,222 basehttp 2808 9084 "GET /s1/heads/ HTTP/1.1" 200 5
+INFO 2023-08-31 09:21:33,478 basehttp 2808 9084 "GET /s1/heads/ HTTP/1.1" 200 5
+INFO 2023-08-31 09:21:33,708 basehttp 2808 9084 "GET /s1/heads/ HTTP/1.1" 200 5
+INFO 2023-08-31 09:21:34,154 basehttp 2808 9084 "GET /s1/heads/ HTTP/1.1" 200 5
+INFO 2023-08-31 09:21:34,611 basehttp 2808 9084 "GET /s1/heads/ HTTP/1.1" 200 5
+INFO 2023-08-31 09:21:35,006 basehttp 2808 9084 "GET /s1/heads/ HTTP/1.1" 200 5
+INFO 2023-08-31 09:21:35,223 basehttp 2808 9084 "GET /s1/heads/ HTTP/1.1" 200 5
+INFO 2023-08-31 09:21:35,590 basehttp 2808 9084 "GET /s1/heads/ HTTP/1.1" 200 5
+INFO 2023-08-31 09:21:35,856 basehttp 2808 9084 "GET /s1/heads/ HTTP/1.1" 200 5
+INFO 2023-08-31 09:21:36,210 basehttp 2808 9084 "GET /s1/heads/ HTTP/1.1" 200 5
+INFO 2023-08-31 09:42:38,059 autoreload 2808 6856 C:\PY\django\myproject\my_project\settings.py changed, reloading.
+INFO 2023-08-31 09:42:47,601 autoreload 11888 9708 Watching for file changes with StatReloader
+INFO 2023-08-31 09:44:51,684 autoreload 11888 9708 C:\PY\django\myproject\my_project\settings.py changed, reloading.
+INFO 2023-08-31 10:02:55,589 autoreload 14048 2256 Watching for file changes with StatReloader
+INFO 2023-08-31 10:03:02,676 basehttp 14048 14056 "GET /s1/heads/ HTTP/1.1" 200 5
+INFO 2023-08-31 10:03:03,545 basehttp 14048 14056 "GET /s1/heads/ HTTP/1.1" 200 5
+INFO 2023-08-31 10:03:07,550 basehttp 14048 14056 "GET /s1/heads/ HTTP/1.1" 200 5
+INFO 2023-08-31 10:03:10,790 basehttp 14048 14056 "GET /s1/heads/ HTTP/1.1" 200 5
+INFO 2023-08-31 10:03:11,352 basehttp 14048 12948 "GET /s1/heads/ HTTP/1.1" 200 5
+INFO 2023-08-31 10:03:20,445 basehttp 14048 12948 "GET /s1/cube/ HTTP/1.1" 200 1
+INFO 2023-08-31 10:03:22,930 basehttp 14048 13336 "GET /s1/cube/ HTTP/1.1" 200 1
+INFO 2023-08-31 10:03:23,482 basehttp 14048 13336 "GET /s1/cube/ HTTP/1.1" 200 1
+INFO 2023-08-31 10:03:23,736 basehttp 14048 13336 "GET /s1/cube/ HTTP/1.1" 200 1
+INFO 2023-08-31 10:03:23,920 basehttp 14048 13336 "GET /s1/cube/ HTTP/1.1" 200 1
+INFO 2023-08-31 10:03:24,105 basehttp 14048 13336 "GET /s1/cube/ HTTP/1.1" 200 1
+INFO 2023-08-31 10:03:24,282 basehttp 14048 13336 "GET /s1/cube/ HTTP/1.1" 200 1
+INFO 2023-08-31 10:03:31,242 basehttp 14048 12612 "GET /s1/number/ HTTP/1.1" 200 2
+INFO 2023-08-31 10:03:32,619 basehttp 14048 12612 "GET /s1/number/ HTTP/1.1" 200 2
+INFO 2023-08-31 10:03:32,872 basehttp 14048 12612 "GET /s1/number/ HTTP/1.1" 200 2
+INFO 2023-08-31 10:03:33,057 basehttp 14048 12612 "GET /s1/number/ HTTP/1.1" 200 2
+INFO 2023-08-31 10:03:33,257 basehttp 14048 12612 "GET /s1/number/ HTTP/1.1" 200 2
+INFO 2023-08-31 10:03:33,462 basehttp 14048 12612 "GET /s1/number/ HTTP/1.1" 200 2
+INFO 2023-08-31 10:03:33,721 basehttp 14048 12612 "GET /s1/number/ HTTP/1.1" 200 2
+INFO 2023-08-31 10:03:34,287 basehttp 14048 12612 "GET /s1/number/ HTTP/1.1" 200 2
+INFO 2023-08-31 10:03:34,481 basehttp 14048 12612 "GET /s1/number/ HTTP/1.1" 200 2
+INFO 2023-08-31 10:03:34,730 basehttp 14048 12612 "GET /s1/number/ HTTP/1.1" 200 2
+INFO 2023-08-31 10:08:52,126 autoreload 10356 12520 Watching for file changes with StatReloader
+INFO 2023-08-31 10:08:55,938 basehttp 10356 14708 "GET /s1/number/ HTTP/1.1" 200 2
+INFO 2023-08-31 10:08:56,934 basehttp 10356 14708 "GET /s1/number/ HTTP/1.1" 200 2
+INFO 2023-08-31 10:08:57,340 basehttp 10356 14708 "GET /s1/number/ HTTP/1.1" 200 2
+INFO 2023-08-31 10:08:57,556 basehttp 10356 14708 "GET /s1/number/ HTTP/1.1" 200 2
+INFO 2023-08-31 10:08:57,781 basehttp 10356 14708 "GET /s1/number/ HTTP/1.1" 200 2
+INFO 2023-08-31 10:08:58,004 basehttp 10356 14708 "GET /s1/number/ HTTP/1.1" 200 2
+INFO 2023-08-31 10:08:58,741 basehttp 10356 14708 "GET /s1/number/ HTTP/1.1" 200 2
+INFO 2023-08-31 10:08:59,481 basehttp 10356 14708 "GET /s1/number/ HTTP/1.1" 200 2
+INFO 2023-08-31 10:08:59,700 basehttp 10356 14708 "GET /s1/number/ HTTP/1.1" 200 2
+INFO 2023-08-31 10:09:00,308 basehttp 10356 14708 "GET /s1/number/ HTTP/1.1" 200 2
+INFO 2023-08-31 10:09:09,634 basehttp 10356 10292 "GET /s1/cube/ HTTP/1.1" 200 1
+INFO 2023-08-31 10:09:11,925 basehttp 10356 7252 "GET /s1/cube/ HTTP/1.1" 200 1
+INFO 2023-08-31 10:09:12,125 basehttp 10356 7252 "GET /s1/cube/ HTTP/1.1" 200 1
+INFO 2023-08-31 10:09:12,317 basehttp 10356 7252 "GET /s1/cube/ HTTP/1.1" 200 1
+INFO 2023-08-31 10:09:12,500 basehttp 10356 7252 "GET /s1/cube/ HTTP/1.1" 200 1
+INFO 2023-08-31 10:09:12,688 basehttp 10356 7252 "GET /s1/cube/ HTTP/1.1" 200 1
+INFO 2023-08-31 10:09:12,852 basehttp 10356 7252 "GET /s1/cube/ HTTP/1.1" 200 1
+INFO 2023-08-31 10:09:13,013 basehttp 10356 7252 "GET /s1/cube/ HTTP/1.1" 200 1
+INFO 2023-08-31 10:09:13,357 basehttp 10356 7252 "GET /s1/cube/ HTTP/1.1" 200 1
+INFO 2023-08-31 10:09:13,557 basehttp 10356 7252 "GET /s1/cube/ HTTP/1.1" 200 1
+INFO 2023-08-31 10:09:13,701 basehttp 10356 7252 "GET /s1/cube/ HTTP/1.1" 200 1
+INFO 2023-08-31 10:09:20,761 basehttp 10356 7252 "GET /s1/heads/ HTTP/1.1" 200 5
+INFO 2023-08-31 10:09:22,845 basehttp 10356 14008 "GET /s1/heads/ HTTP/1.1" 200 5
+INFO 2023-08-31 10:09:23,045 basehttp 10356 14008 "GET /s1/heads/ HTTP/1.1" 200 5
+INFO 2023-08-31 10:09:23,241 basehttp 10356 14008 "GET /s1/heads/ HTTP/1.1" 200 5
+INFO 2023-08-31 10:09:23,618 basehttp 10356 14008 "GET /s1/heads/ HTTP/1.1" 200 5
+INFO 2023-08-31 10:09:23,809 basehttp 10356 14008 "GET /s1/heads/ HTTP/1.1" 200 5
+INFO 2023-08-31 10:09:23,996 basehttp 10356 14008 "GET /s1/heads/ HTTP/1.1" 200 5
+INFO 2023-08-31 10:09:24,176 basehttp 10356 14008 "GET /s1/heads/ HTTP/1.1" 200 5
+INFO 2023-08-31 10:09:24,352 basehttp 10356 14008 "GET /s1/heads/ HTTP/1.1" 200 5
+INFO 2023-08-31 10:09:24,521 basehttp 10356 14008 "GET /s1/heads/ HTTP/1.1" 200 5
+INFO 2023-08-31 10:09:24,874 basehttp 10356 14008 "GET /s1/heads/ HTTP/1.1" 200 5
+INFO 2023-08-31 10:09:25,068 basehttp 10356 14008 "GET /s1/heads/ HTTP/1.1" 200 5
+INFO 2023-08-31 10:09:25,265 basehttp 10356 14008 "GET /s1/heads/ HTTP/1.1" 200 5
+INFO 2023-08-31 10:09:25,466 basehttp 10356 14008 "GET /s1/heads/ HTTP/1.1" 200 5
+INFO 2023-08-31 10:09:25,688 basehttp 10356 14008 "GET /s1/heads/ HTTP/1.1" 200 5
+INFO 2023-08-31 10:09:25,872 basehttp 10356 14008 "GET /s1/heads/ HTTP/1.1" 200 5
+INFO 2023-08-31 10:09:26,102 basehttp 10356 14008 "GET /s1/heads/ HTTP/1.1" 200 5
+INFO 2023-08-31 10:09:26,641 basehttp 10356 14008 "GET /s1/heads/ HTTP/1.1" 200 5
+INFO 2023-08-31 10:09:26,840 basehttp 10356 14008 "GET /s1/heads/ HTTP/1.1" 200 5
+INFO 2023-08-31 10:09:27,060 basehttp 10356 14008 "GET /s1/heads/ HTTP/1.1" 200 5
