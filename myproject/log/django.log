@@ -51,3 +51,283 @@ INFO 2023-08-29 19:15:01,102 basehttp 11008 10708 "GET / HTTP/1.1" 200 13
 WARNING 2023-08-29 19:15:01,136 log 11008 10708 Not Found: /favicon.ico
 WARNING 2023-08-29 19:15:01,136 basehttp 11008 10708 "GET /favicon.ico HTTP/1.1" 404 2441
 INFO 2023-08-29 19:22:00,221 autoreload 11592 10748 Watching for file changes with StatReloader
+INFO 2023-08-30 09:13:39,111 autoreload 13356 9000 Watching for file changes with StatReloader
+INFO 2023-08-30 09:14:42,654 autoreload 11980 12936 Watching for file changes with StatReloader
+INFO 2023-08-30 09:14:49,797 views 11980 4652 Index page accessed
+INFO 2023-08-30 09:14:49,798 basehttp 11980 4652 "GET / HTTP/1.1" 200 13
+WARNING 2023-08-30 09:14:50,752 log 11980 8020 Not Found: /favicon.ico
+WARNING 2023-08-30 09:14:50,752 basehttp 11980 8020 "GET /favicon.ico HTTP/1.1" 404 2442
+INFO 2023-08-30 09:15:02,405 basehttp 11980 13728 "GET /about HTTP/1.1" 301 0
+ERROR 2023-08-30 09:15:02,533 views 11980 2648 Error in about page: division by zero
+Traceback (most recent call last):
+  File "C:\PY\django\myproject\myapp\views.py", line 16, in about
+    result = 1 / 0
+             ~~^~~
+ZeroDivisionError: division by zero
+INFO 2023-08-30 09:15:02,536 basehttp 11980 2648 "GET /about/ HTTP/1.1" 200 27
+INFO 2023-08-30 09:15:16,595 views 11980 3580 Index page accessed
+INFO 2023-08-30 09:15:16,596 basehttp 11980 3580 "GET / HTTP/1.1" 200 13
+INFO 2023-08-30 09:44:13,536 autoreload 13956 7320 Watching for file changes with StatReloader
+INFO 2023-08-30 09:44:27,456 views 13956 876 Index page accessed
+INFO 2023-08-30 09:44:27,458 basehttp 13956 876 "GET / HTTP/1.1" 200 13
+INFO 2023-08-30 09:44:32,141 views 13956 876 Index page accessed
+INFO 2023-08-30 09:44:32,141 basehttp 13956 876 "GET / HTTP/1.1" 200 13
+ERROR 2023-08-30 09:44:40,200 views 13956 876 Error in about page: division by zero
+Traceback (most recent call last):
+  File "C:\PY\django\myproject\myapp\views.py", line 16, in about
+    result = 1 / 0
+             ~~^~~
+ZeroDivisionError: division by zero
+INFO 2023-08-30 09:44:40,229 basehttp 13956 876 "GET /about/ HTTP/1.1" 200 27
+INFO 2023-08-30 09:46:47,475 autoreload 13956 7320 C:\PY\django\myproject\hw_1_app\urls.py changed, reloading.
+INFO 2023-08-30 09:46:48,424 autoreload 10024 12136 Watching for file changes with StatReloader
+INFO 2023-08-30 09:46:59,095 basehttp 10024 12980 "GET /abouthw/ HTTP/1.1" 200 8
+WARNING 2023-08-30 09:47:21,546 log 10024 12980 Not Found: /indexhw/
+WARNING 2023-08-30 09:47:21,546 basehttp 10024 12980 "GET /indexhw/ HTTP/1.1" 404 2767
+WARNING 2023-08-30 09:47:58,726 log 10024 12980 Not Found: /indexhw/
+WARNING 2023-08-30 09:47:58,727 basehttp 10024 12980 "GET /indexhw/ HTTP/1.1" 404 2767
+INFO 2023-08-30 09:47:59,214 autoreload 10024 12136 C:\PY\django\myproject\hw_1_app\urls.py changed, reloading.
+INFO 2023-08-30 09:48:00,072 autoreload 4592 2868 Watching for file changes with StatReloader
+WARNING 2023-08-30 09:48:03,375 log 4592 2132 Not Found: /indexhw/
+WARNING 2023-08-30 09:48:03,376 basehttp 4592 2132 "GET /indexhw/ HTTP/1.1" 404 2765
+WARNING 2023-08-30 09:48:04,956 log 4592 2132 Not Found: /indexhw/
+WARNING 2023-08-30 09:48:04,957 basehttp 4592 2132 "GET /indexhw/ HTTP/1.1" 404 2765
+INFO 2023-08-30 09:50:01,186 autoreload 4592 2868 C:\PY\django\myproject\hw_1_app\urls.py changed, reloading.
+INFO 2023-08-30 09:50:02,004 autoreload 6672 6888 Watching for file changes with StatReloader
+WARNING 2023-08-30 09:50:06,091 log 6672 9424 Not Found: /indexhw/
+WARNING 2023-08-30 09:50:06,092 basehttp 6672 9424 "GET /indexhw/ HTTP/1.1" 404 2774
+WARNING 2023-08-30 09:50:07,401 log 6672 9424 Not Found: /indexhw/
+WARNING 2023-08-30 09:50:07,402 basehttp 6672 9424 "GET /indexhw/ HTTP/1.1" 404 2774
+WARNING 2023-08-30 13:47:55,511 log 6672 5208 Not Found: /indexhw/
+WARNING 2023-08-30 13:47:55,514 basehttp 6672 5208 "GET /indexhw/ HTTP/1.1" 404 2774
+INFO 2023-08-30 14:05:44,957 autoreload 10944 10124 Watching for file changes with StatReloader
+INFO 2023-08-30 14:05:49,369 views 10944 6752 Index page accessed
+INFO 2023-08-30 14:05:49,371 basehttp 10944 6752 "GET / HTTP/1.1" 200 13
+WARNING 2023-08-30 14:05:57,891 log 10944 2808 Not Found: /hw
+WARNING 2023-08-30 14:05:57,892 basehttp 10944 2808 "GET /hw HTTP/1.1" 404 2518
+WARNING 2023-08-30 14:06:11,490 log 10944 1636 Not Found: /hw/
+WARNING 2023-08-30 14:06:11,491 basehttp 10944 1636 "GET /hw/ HTTP/1.1" 404 2757
+INFO 2023-08-30 14:06:35,785 basehttp 10944 1636 "GET /hw/about HTTP/1.1" 301 0
+INFO 2023-08-30 14:06:35,790 basehttp 10944 1296 "GET /hw/about/ HTTP/1.1" 200 8
+WARNING 2023-08-30 14:06:45,671 log 10944 1296 Not Found: /hw/
+WARNING 2023-08-30 14:06:45,672 basehttp 10944 1296 "GET /hw/ HTTP/1.1" 404 2757
+INFO 2023-08-30 14:08:06,088 autoreload 10944 10124 C:\PY\django\myproject\hw_1_app\urls.py changed, reloading.
+INFO 2023-08-30 14:08:07,005 autoreload 9032 13524 Watching for file changes with StatReloader
+INFO 2023-08-30 14:08:12,874 basehttp 9032 14172 "GET /hw/ HTTP/1.1" 200 8
+INFO 2023-08-30 14:08:26,717 basehttp 9032 14172 "GET /hw/about/ HTTP/1.1" 200 8
+INFO 2023-08-30 14:11:01,137 autoreload 9032 13524 C:\PY\django\myproject\hw_1_app\views.py changed, reloading.
+INFO 2023-08-30 14:11:02,037 autoreload 11140 7496 Watching for file changes with StatReloader
+INFO 2023-08-30 14:11:12,490 autoreload 11140 7496 C:\PY\django\myproject\hw_1_app\views.py changed, reloading.
+INFO 2023-08-30 14:11:13,370 autoreload 6608 9648 Watching for file changes with StatReloader
+INFO 2023-08-30 14:11:15,989 basehttp 6608 11348 "GET /hw/about/ HTTP/1.1" 200 8
+INFO 2023-08-30 14:11:20,976 basehttp 6608 11348 "GET /hw/about/ HTTP/1.1" 200 8
+INFO 2023-08-30 14:11:38,114 autoreload 6608 9648 C:\PY\django\myproject\hw_1_app\views.py changed, reloading.
+INFO 2023-08-30 14:11:38,932 autoreload 8200 1776 Watching for file changes with StatReloader
+INFO 2023-08-30 14:11:41,816 basehttp 8200 15340 "GET /hw/about/ HTTP/1.1" 200 8
+INFO 2023-08-30 14:11:43,275 basehttp 8200 10208 "GET /hw/about/ HTTP/1.1" 200 8
+INFO 2023-08-30 14:13:18,598 autoreload 8200 1776 C:\PY\django\myproject\hw_1_app\urls.py changed, reloading.
+INFO 2023-08-30 14:13:19,436 autoreload 9156 3384 Watching for file changes with StatReloader
+INFO 2023-08-30 14:13:22,845 basehttp 9156 14108 "GET /hw/about/ HTTP/1.1" 200 8
+INFO 2023-08-30 14:13:29,684 basehttp 9156 14108 "GET /hw/ HTTP/1.1" 200 23
+INFO 2023-08-30 14:16:21,797 autoreload 9156 3384 C:\PY\django\myproject\hw_1_app\views.py changed, reloading.
+INFO 2023-08-30 14:16:22,715 autoreload 12408 14580 Watching for file changes with StatReloader
+INFO 2023-08-30 14:16:28,275 basehttp 12408 7684 "GET /hw/ HTTP/1.1" 200 282
+INFO 2023-08-30 14:17:57,165 autoreload 12408 14580 C:\PY\django\myproject\hw_1_app\views.py changed, reloading.
+INFO 2023-08-30 14:17:57,975 autoreload 14608 9072 Watching for file changes with StatReloader
+INFO 2023-08-30 14:18:02,495 basehttp 14608 10856 "GET /hw/ HTTP/1.1" 200 1844
+WARNING 2023-08-30 14:18:02,904 log 14608 10856 Not Found: /hw/styles/style.css
+WARNING 2023-08-30 14:18:02,905 log 14608 14636 Not Found: /hw/images/image.png
+WARNING 2023-08-30 14:18:02,905 basehttp 14608 10856 "GET /hw/styles/style.css HTTP/1.1" 404 2797
+WARNING 2023-08-30 14:18:02,906 basehttp 14608 14636 "GET /hw/images/image.png HTTP/1.1" 404 2797
+WARNING 2023-08-30 14:18:16,385 log 14608 5216 Not Found: /hw/index.html
+WARNING 2023-08-30 14:18:16,386 basehttp 14608 5216 "GET /hw/index.html HTTP/1.1" 404 2779
+WARNING 2023-08-30 14:18:22,778 log 14608 5216 Not Found: /hw/catalog.html
+WARNING 2023-08-30 14:18:22,779 basehttp 14608 5216 "GET /hw/catalog.html HTTP/1.1" 404 2785
+INFO 2023-08-30 14:25:41,289 autoreload 14608 9072 C:\PY\django\myproject\hw_1_app\views.py changed, reloading.
+INFO 2023-08-30 14:25:42,220 autoreload 9904 14500 Watching for file changes with StatReloader
+INFO 2023-08-30 14:29:53,798 autoreload 9904 14500 C:\PY\django\myproject\hw_1_app\views.py changed, reloading.
+INFO 2023-08-30 14:29:54,680 autoreload 1552 2764 Watching for file changes with StatReloader
+INFO 2023-08-30 14:29:56,483 basehttp 1552 2888 "GET /hw/ HTTP/1.1" 200 2586
+WARNING 2023-08-30 14:29:56,525 log 1552 11564 Not Found: /hw/images/image.png
+WARNING 2023-08-30 14:29:56,527 log 1552 2888 Not Found: /hw/styles/style.css
+WARNING 2023-08-30 14:29:56,527 basehttp 1552 11564 "GET /hw/images/image.png HTTP/1.1" 404 2797
+WARNING 2023-08-30 14:29:56,528 basehttp 1552 2888 "GET /hw/styles/style.css HTTP/1.1" 404 2797
+WARNING 2023-08-30 14:29:59,661 log 1552 2888 Not Found: /hw/hw/about/
+WARNING 2023-08-30 14:29:59,662 basehttp 1552 2888 "GET /hw/hw/about/ HTTP/1.1" 404 2776
+INFO 2023-08-30 14:30:23,664 autoreload 1552 2764 C:\PY\django\myproject\hw_1_app\views.py changed, reloading.
+INFO 2023-08-30 14:30:24,528 autoreload 672 14712 Watching for file changes with StatReloader
+INFO 2023-08-30 14:30:28,430 basehttp 672 9104 "GET /hw/ HTTP/1.1" 200 2581
+WARNING 2023-08-30 14:30:28,701 log 672 9536 Not Found: /hw/images/image.png
+WARNING 2023-08-30 14:30:28,702 basehttp 672 9536 "GET /hw/images/image.png HTTP/1.1" 404 2797
+WARNING 2023-08-30 14:30:28,703 log 672 9104 Not Found: /hw/styles/style.css
+WARNING 2023-08-30 14:30:28,704 basehttp 672 9104 "GET /hw/styles/style.css HTTP/1.1" 404 2797
+INFO 2023-08-30 14:30:29,065 basehttp 672 9104 "GET /hw/ HTTP/1.1" 200 2581
+WARNING 2023-08-30 14:30:29,099 log 672 9104 Not Found: /hw/styles/style.css
+WARNING 2023-08-30 14:30:29,100 log 672 9536 Not Found: /hw/images/image.png
+WARNING 2023-08-30 14:30:29,101 basehttp 672 9104 "GET /hw/styles/style.css HTTP/1.1" 404 2797
+WARNING 2023-08-30 14:30:29,101 basehttp 672 9536 "GET /hw/images/image.png HTTP/1.1" 404 2797
+INFO 2023-08-30 14:30:32,750 basehttp 672 9536 "GET /hw/about/ HTTP/1.1" 200 8
+INFO 2023-08-30 14:30:39,749 basehttp 672 8836 "GET /hw/ HTTP/1.1" 200 2581
+WARNING 2023-08-30 14:30:39,934 log 672 14308 Not Found: /hw/images/image.png
+WARNING 2023-08-30 14:30:39,935 log 672 8836 Not Found: /hw/styles/style.css
+WARNING 2023-08-30 14:30:39,936 basehttp 672 14308 "GET /hw/images/image.png HTTP/1.1" 404 2797
+WARNING 2023-08-30 14:30:39,936 basehttp 672 8836 "GET /hw/styles/style.css HTTP/1.1" 404 2797
+INFO 2023-08-30 14:30:40,691 basehttp 672 8836 "GET /hw/ HTTP/1.1" 200 2581
+WARNING 2023-08-30 14:30:40,723 log 672 14308 Not Found: /hw/images/image.png
+WARNING 2023-08-30 14:30:40,724 basehttp 672 14308 "GET /hw/images/image.png HTTP/1.1" 404 2797
+WARNING 2023-08-30 14:30:40,726 log 672 8836 Not Found: /hw/styles/style.css
+WARNING 2023-08-30 14:30:40,727 basehttp 672 8836 "GET /hw/styles/style.css HTTP/1.1" 404 2797
+INFO 2023-08-30 14:31:35,322 autoreload 672 14712 C:\PY\django\myproject\hw_1_app\views.py changed, reloading.
+INFO 2023-08-30 14:31:36,178 autoreload 8804 3456 Watching for file changes with StatReloader
+INFO 2023-08-30 14:32:23,294 autoreload 8804 3456 C:\PY\django\myproject\hw_1_app\views.py changed, reloading.
+INFO 2023-08-30 14:32:24,274 autoreload 9700 2616 Watching for file changes with StatReloader
+INFO 2023-08-30 14:32:35,962 basehttp 9700 12384 "GET /hw/ HTTP/1.1" 200 2648
+WARNING 2023-08-30 14:32:36,003 log 9700 12384 Not Found: /hw/styles/style.css
+WARNING 2023-08-30 14:32:36,004 basehttp 9700 12384 "GET /hw/styles/style.css HTTP/1.1" 404 2797
+INFO 2023-08-30 14:33:41,576 autoreload 9700 2616 C:\PY\django\myproject\hw_1_app\views.py changed, reloading.
+INFO 2023-08-30 14:33:42,393 autoreload 14624 13588 Watching for file changes with StatReloader
+INFO 2023-08-30 14:33:44,431 basehttp 14624 10360 "GET /hw/ HTTP/1.1" 200 2657
+WARNING 2023-08-30 14:33:44,461 log 14624 10360 Not Found: /hw/styles/style.css
+WARNING 2023-08-30 14:33:44,462 basehttp 14624 10360 "GET /hw/styles/style.css HTTP/1.1" 404 2797
+INFO 2023-08-30 14:34:56,309 autoreload 14624 13588 C:\PY\django\myproject\hw_1_app\views.py changed, reloading.
+INFO 2023-08-30 14:34:57,224 autoreload 2596 12800 Watching for file changes with StatReloader
+INFO 2023-08-30 14:35:48,444 autoreload 2596 12800 C:\PY\django\myproject\hw_1_app\views.py changed, reloading.
+INFO 2023-08-30 14:35:49,398 autoreload 10324 12596 Watching for file changes with StatReloader
+INFO 2023-08-30 14:35:58,747 autoreload 10324 12596 C:\PY\django\myproject\hw_1_app\views.py changed, reloading.
+INFO 2023-08-30 14:35:59,661 autoreload 8940 11340 Watching for file changes with StatReloader
+INFO 2023-08-30 14:36:14,389 autoreload 8940 11340 C:\PY\django\myproject\hw_1_app\views.py changed, reloading.
+INFO 2023-08-30 14:36:15,274 autoreload 14220 10824 Watching for file changes with StatReloader
+INFO 2023-08-30 14:37:45,137 autoreload 14220 10824 C:\PY\django\myproject\hw_1_app\views.py changed, reloading.
+INFO 2023-08-30 14:37:45,982 autoreload 8300 1716 Watching for file changes with StatReloader
+INFO 2023-08-30 14:38:18,137 autoreload 8300 1716 C:\PY\django\myproject\hw_1_app\views.py changed, reloading.
+INFO 2023-08-30 14:38:19,165 autoreload 13000 9796 Watching for file changes with StatReloader
+INFO 2023-08-30 14:41:29,765 autoreload 13000 9796 C:\PY\django\myproject\hw_1_app\views.py changed, reloading.
+INFO 2023-08-30 14:41:30,667 autoreload 13392 14748 Watching for file changes with StatReloader
+INFO 2023-08-30 14:42:09,876 autoreload 13392 14748 C:\PY\django\myproject\hw_1_app\views.py changed, reloading.
+INFO 2023-08-30 14:42:10,930 autoreload 14632 6936 Watching for file changes with StatReloader
+INFO 2023-08-30 14:44:12,398 autoreload 14632 6936 C:\PY\django\myproject\hw_1_app\views.py changed, reloading.
+INFO 2023-08-30 14:44:13,285 autoreload 12736 8208 Watching for file changes with StatReloader
+INFO 2023-08-30 14:44:41,005 autoreload 12736 8208 C:\PY\django\myproject\hw_1_app\views.py changed, reloading.
+INFO 2023-08-30 14:44:42,041 autoreload 3644 14864 Watching for file changes with StatReloader
+INFO 2023-08-30 14:44:47,163 basehttp 3644 3096 "GET /hw/ HTTP/1.1" 200 2873
+WARNING 2023-08-30 14:44:47,489 log 3644 3096 Not Found: /hw/styles/style.css
+WARNING 2023-08-30 14:44:47,489 basehttp 3644 3096 "GET /hw/styles/style.css HTTP/1.1" 404 2797
+INFO 2023-08-30 14:46:10,099 basehttp 3644 5920 "GET /hw/about/ HTTP/1.1" 200 8
+INFO 2023-08-30 14:46:10,979 autoreload 3644 14864 C:\PY\django\myproject\hw_1_app\views.py changed, reloading.
+INFO 2023-08-30 14:46:11,842 autoreload 4652 13164 Watching for file changes with StatReloader
+INFO 2023-08-30 14:46:25,081 basehttp 4652 14980 "GET /hw/ HTTP/1.1" 200 2857
+WARNING 2023-08-30 14:46:25,108 log 4652 14980 Not Found: /hw/styles/style.css
+WARNING 2023-08-30 14:46:25,110 basehttp 4652 14980 "GET /hw/styles/style.css HTTP/1.1" 404 2797
+INFO 2023-08-30 14:49:31,972 autoreload 4652 13164 C:\PY\django\myproject\hw_1_app\views.py changed, reloading.
+INFO 2023-08-30 14:49:32,872 autoreload 6912 12080 Watching for file changes with StatReloader
+INFO 2023-08-30 14:53:35,628 autoreload 6912 12080 C:\PY\django\myproject\hw_1_app\urls.py changed, reloading.
+INFO 2023-08-30 14:53:36,602 autoreload 14644 9880 Watching for file changes with StatReloader
+INFO 2023-08-30 14:54:58,384 autoreload 14644 9880 C:\PY\django\myproject\hw_1_app\views.py changed, reloading.
+INFO 2023-08-30 14:54:59,366 autoreload 13928 3432 Watching for file changes with StatReloader
+INFO 2023-08-30 14:56:43,847 autoreload 13928 3432 C:\PY\django\myproject\hw_1_app\urls.py changed, reloading.
+INFO 2023-08-30 14:56:44,687 autoreload 12644 1944 Watching for file changes with StatReloader
+INFO 2023-08-30 14:57:09,647 autoreload 12644 1944 C:\PY\django\myproject\hw_1_app\urls.py changed, reloading.
+INFO 2023-08-30 14:57:10,449 autoreload 9648 10244 Watching for file changes with StatReloader
+INFO 2023-08-30 14:57:18,136 basehttp 9648 9376 "GET /hw/ HTTP/1.1" 200 3131
+WARNING 2023-08-30 14:57:18,170 log 9648 9376 Not Found: /hw/styles/style.css
+WARNING 2023-08-30 14:57:18,171 basehttp 9648 9376 "GET /hw/styles/style.css HTTP/1.1" 404 2805
+INFO 2023-08-30 14:57:23,925 basehttp 9648 11932 "GET /hw/ HTTP/1.1" 200 3131
+WARNING 2023-08-30 14:57:23,947 log 9648 11932 Not Found: /hw/styles/style.css
+WARNING 2023-08-30 14:57:23,948 basehttp 9648 11932 "GET /hw/styles/style.css HTTP/1.1" 404 2805
+INFO 2023-08-30 14:57:25,028 basehttp 9648 11932 "GET /hw/ HTTP/1.1" 200 3131
+WARNING 2023-08-30 14:57:25,049 log 9648 11932 Not Found: /hw/styles/style.css
+WARNING 2023-08-30 14:57:25,049 basehttp 9648 11932 "GET /hw/styles/style.css HTTP/1.1" 404 2805
+INFO 2023-08-30 15:00:08,955 autoreload 9648 10244 C:\PY\django\myproject\hw_1_app\views.py changed, reloading.
+INFO 2023-08-30 15:00:09,851 autoreload 12012 7660 Watching for file changes with StatReloader
+INFO 2023-08-30 15:00:12,870 basehttp 12012 8532 "GET /hw/ HTTP/1.1" 200 3104
+WARNING 2023-08-30 15:00:12,905 log 12012 8532 Not Found: /hw/styles/style.css
+WARNING 2023-08-30 15:00:12,906 basehttp 12012 8532 "GET /hw/styles/style.css HTTP/1.1" 404 2805
+WARNING 2023-08-30 15:00:22,603 log 12012 1428 Not Found: /hw/hometask/
+WARNING 2023-08-30 15:00:22,604 basehttp 12012 1428 "GET /hw/hometask/ HTTP/1.1" 404 2784
+INFO 2023-08-30 15:00:33,567 autoreload 12012 7660 C:\PY\django\myproject\hw_1_app\views.py changed, reloading.
+INFO 2023-08-30 15:00:34,388 autoreload 9716 13816 Watching for file changes with StatReloader
+WARNING 2023-08-30 15:00:38,811 log 9716 12664 Not Found: /hw/hometask/
+WARNING 2023-08-30 15:00:38,812 basehttp 9716 12664 "GET /hw/hometask/ HTTP/1.1" 404 2784
+INFO 2023-08-30 15:01:25,336 basehttp 9716 14108 "GET /hw/home_task/ HTTP/1.1" 200 675
+WARNING 2023-08-30 15:01:43,072 log 9716 15212 Not Found: /hw/hometask/
+WARNING 2023-08-30 15:01:43,073 basehttp 9716 15212 "GET /hw/hometask/ HTTP/1.1" 404 2784
+WARNING 2023-08-30 15:01:50,933 log 9716 14516 Not Found: /hw/hometask/
+WARNING 2023-08-30 15:01:50,934 basehttp 9716 14516 "GET /hw/hometask/ HTTP/1.1" 404 2784
+INFO 2023-08-30 15:04:24,492 autoreload 13920 13576 Watching for file changes with StatReloader
+INFO 2023-08-30 15:04:31,482 basehttp 13920 8108 "GET /hw/ HTTP/1.1" 200 3105
+WARNING 2023-08-30 15:04:31,740 log 13920 8108 Not Found: /hw/styles/style.css
+WARNING 2023-08-30 15:04:31,741 basehttp 13920 8108 "GET /hw/styles/style.css HTTP/1.1" 404 2805
+INFO 2023-08-30 15:04:32,221 basehttp 13920 8108 "GET /hw/ HTTP/1.1" 200 3105
+WARNING 2023-08-30 15:04:32,247 log 13920 8108 Not Found: /hw/styles/style.css
+WARNING 2023-08-30 15:04:32,247 basehttp 13920 8108 "GET /hw/styles/style.css HTTP/1.1" 404 2805
+INFO 2023-08-30 15:04:35,893 basehttp 13920 7568 "GET /hw/home_task/ HTTP/1.1" 200 675
+INFO 2023-08-30 15:05:48,052 autoreload 13920 13576 C:\PY\django\myproject\hw_1_app\views.py changed, reloading.
+INFO 2023-08-30 15:05:48,998 autoreload 13296 12408 Watching for file changes with StatReloader
+INFO 2023-08-30 15:06:00,055 basehttp 13296 12044 "GET /hw/home_task/ HTTP/1.1" 200 675
+INFO 2023-08-30 15:12:03,731 autoreload 13296 12408 C:\PY\django\myproject\hw_1_app\views.py changed, reloading.
+INFO 2023-08-30 15:12:04,581 autoreload 13172 12488 Watching for file changes with StatReloader
+INFO 2023-08-30 15:12:23,758 autoreload 10648 4000 Watching for file changes with StatReloader
+INFO 2023-08-30 15:12:36,003 basehttp 10648 10476 "GET /hw/ HTTP/1.1" 200 2797
+WARNING 2023-08-30 15:12:36,207 log 10648 10476 Not Found: /hw/styles/style.css
+WARNING 2023-08-30 15:12:36,208 basehttp 10648 10476 "GET /hw/styles/style.css HTTP/1.1" 404 2805
+INFO 2023-08-30 15:12:37,229 basehttp 10648 10476 "GET /hw/ HTTP/1.1" 200 2797
+WARNING 2023-08-30 15:12:37,257 log 10648 10476 Not Found: /hw/styles/style.css
+WARNING 2023-08-30 15:12:37,257 basehttp 10648 10476 "GET /hw/styles/style.css HTTP/1.1" 404 2805
+INFO 2023-08-30 15:14:20,310 autoreload 10648 4000 C:\PY\django\myproject\hw_1_app\views.py changed, reloading.
+INFO 2023-08-30 15:14:21,146 autoreload 844 6944 Watching for file changes with StatReloader
+INFO 2023-08-30 15:14:29,491 basehttp 844 13944 "GET /hw/ HTTP/1.1" 200 2710
+INFO 2023-08-30 15:14:34,322 basehttp 844 13944 "GET /hw/ HTTP/1.1" 200 2710
+INFO 2023-08-30 15:14:42,129 basehttp 844 10448 "GET /hw/home_task/ HTTP/1.1" 200 675
+INFO 2023-08-30 15:14:53,737 basehttp 844 10540 "GET /hw/home_task/ HTTP/1.1" 200 675
+INFO 2023-08-30 15:17:43,545 autoreload 844 6944 C:\PY\django\myproject\hw_1_app\views.py changed, reloading.
+INFO 2023-08-30 15:17:44,449 autoreload 2368 6912 Watching for file changes with StatReloader
+INFO 2023-08-30 15:17:47,642 basehttp 2368 2996 "GET /hw/home_task/ HTTP/1.1" 200 759
+INFO 2023-08-30 15:18:47,738 autoreload 2368 6912 C:\PY\django\myproject\hw_1_app\views.py changed, reloading.
+INFO 2023-08-30 15:18:48,574 autoreload 11280 8748 Watching for file changes with StatReloader
+INFO 2023-08-30 15:18:50,782 basehttp 11280 10200 "GET /hw/home_task/ HTTP/1.1" 200 748
+INFO 2023-08-30 15:18:53,786 basehttp 11280 10200 "GET /hw/home_task/ HTTP/1.1" 200 748
+INFO 2023-08-30 15:18:56,546 basehttp 11280 4684 "GET /hw/home_task/ HTTP/1.1" 200 748
+INFO 2023-08-30 15:18:57,579 basehttp 11280 4684 "GET /hw/home_task/ HTTP/1.1" 200 748
+INFO 2023-08-30 15:19:17,568 autoreload 11280 8748 C:\PY\django\myproject\hw_1_app\views.py changed, reloading.
+INFO 2023-08-30 15:19:18,398 autoreload 13908 2148 Watching for file changes with StatReloader
+INFO 2023-08-30 15:19:22,131 basehttp 13908 10368 "GET /hw/home_task/ HTTP/1.1" 200 751
+WARNING 2023-08-30 15:19:23,788 log 13908 10368 Not Found: /hw/home_task/hw/
+WARNING 2023-08-30 15:19:23,789 basehttp 13908 10368 "GET /hw/home_task/hw/ HTTP/1.1" 404 2796
+INFO 2023-08-30 15:19:52,685 autoreload 13908 2148 C:\PY\django\myproject\hw_1_app\views.py changed, reloading.
+INFO 2023-08-30 15:19:53,491 autoreload 12660 12000 Watching for file changes with StatReloader
+INFO 2023-08-30 15:20:14,158 basehttp 12660 11808 "GET /hw/ HTTP/1.1" 200 2710
+INFO 2023-08-30 15:20:14,932 basehttp 12660 11808 "GET /hw/ HTTP/1.1" 200 2710
+INFO 2023-08-30 15:20:17,639 basehttp 12660 9884 "GET /hw/home_task/ HTTP/1.1" 200 749
+INFO 2023-08-30 15:20:19,465 views 12660 9884 Index page accessed
+INFO 2023-08-30 15:20:19,466 basehttp 12660 9884 "GET / HTTP/1.1" 200 13
+INFO 2023-08-30 15:20:39,473 autoreload 12660 12000 C:\PY\django\myproject\hw_1_app\views.py changed, reloading.
+INFO 2023-08-30 15:20:40,334 autoreload 5348 9616 Watching for file changes with StatReloader
+INFO 2023-08-30 15:20:47,793 basehttp 5348 14300 "GET /hw/ HTTP/1.1" 200 2710
+INFO 2023-08-30 15:20:48,692 basehttp 5348 14300 "GET /hw/ HTTP/1.1" 200 2710
+INFO 2023-08-30 15:20:52,867 basehttp 5348 14300 "GET /hw/home_task/ HTTP/1.1" 200 752
+INFO 2023-08-30 15:20:54,671 basehttp 5348 14300 "GET /hw/ HTTP/1.1" 200 2710
+INFO 2023-08-30 15:20:58,663 basehttp 5348 7176 "GET /hw/home_task/ HTTP/1.1" 200 752
+INFO 2023-08-30 15:20:59,975 basehttp 5348 7176 "GET /hw/ HTTP/1.1" 200 2710
+INFO 2023-08-30 15:24:38,819 autoreload 3012 2288 Watching for file changes with StatReloader
+INFO 2023-08-30 15:24:43,840 views 3012 14152 Homework index page -> access
+INFO 2023-08-30 15:24:43,841 basehttp 3012 14152 "GET /hw/ HTTP/1.1" 200 2710
+INFO 2023-08-30 15:24:48,464 views 3012 10648 Home task page -> access
+INFO 2023-08-30 15:24:48,465 basehttp 3012 10648 "GET /hw/home_task/ HTTP/1.1" 200 752
+INFO 2023-08-30 15:24:56,668 views 3012 10648 Homework index page -> access
+INFO 2023-08-30 15:24:56,668 basehttp 3012 10648 "GET /hw/ HTTP/1.1" 200 2710
+INFO 2023-08-30 15:25:17,274 views 3012 7028 Home task page -> access
+INFO 2023-08-30 15:25:17,275 basehttp 3012 7028 "GET /hw/home_task/ HTTP/1.1" 200 752
+INFO 2023-08-30 15:25:26,752 views 3012 7028 Homework index page -> access
+INFO 2023-08-30 15:25:26,753 basehttp 3012 7028 "GET /hw/ HTTP/1.1" 200 2710
+INFO 2023-08-30 15:25:27,842 views 3012 10008 Homework index page -> access
+INFO 2023-08-30 15:25:27,843 basehttp 3012 10008 "GET /hw/ HTTP/1.1" 200 2710
+INFO 2023-08-30 15:25:37,119 views 3012 10008 Home task page -> access
+INFO 2023-08-30 15:25:37,120 basehttp 3012 10008 "GET /hw/home_task/ HTTP/1.1" 200 752
+INFO 2023-08-30 15:25:42,920 views 3012 12940 Homework index page -> access
+INFO 2023-08-30 15:25:42,921 basehttp 3012 12940 "GET /hw/ HTTP/1.1" 200 2710
+INFO 2023-08-30 15:25:47,561 views 3012 4216 Homework index page -> access
+INFO 2023-08-30 15:25:47,561 basehttp 3012 4216 "GET /hw/ HTTP/1.1" 200 2710
+INFO 2023-08-30 15:25:56,258 views 3012 4216 Home task page -> access
+INFO 2023-08-30 15:25:56,259 basehttp 3012 4216 "GET /hw/home_task/ HTTP/1.1" 200 752
+INFO 2023-08-30 15:26:04,814 views 3012 12840 Homework index page -> access
+INFO 2023-08-30 15:26:04,815 basehttp 3012 12840 "GET /hw/ HTTP/1.1" 200 2710

@@ -1,0 +1,119 @@
+Виртуальное окружение
+Создаём виртуальное окружение в Linux или MacOS
+mkdir project
+cd project
+python3 -m venv venv
+Создаём виртуальное окружение в Linux или MacOS
+mkdir project
+cd project
+python -m venv .venv
+Далее активируем виртуальное окружение, чтобы все дальнейшие действия
+выполнялись внутри него.
+venv/bin/activate # Linux/MacOS
+venv\Scripts\activate # Windows
+venv\Scripts\activate.ps1 # Windows PowerShell
+
+pip install django
+
+Внимание! Убедитесь что вы находитесь в нужном каталоге и виртуальное
+окружение с установленным фреймворком активно.
+django-admin startproject myproject
+django-admin startproject myproject_01 .
+
+Структура проекта Django имеет следующий вид:
+myproject/
+     manage.py
+     myproject_01/
+         __init__.py
+         settings.py
+         urls.py
+         asgi.py
+         wsgi.py
+
+Рассмотрим каждый из созданных файлов.
+● manage.py - файл, который используется для управления проектом. С его
+помощью можно запустить сервер, создать миграции, создать
+суперпользователя и т.д.
+● myproject/ - директория, которая содержит основные файлы проекта.
+● __init__.py - файл, который сообщает Python, что директория myproject
+является пакетом.
+9
+● settings.py - файл, который содержит настройки проекта, такие как базы
+данных, шаблоны, статические файлы и т.д.
+● urls.py - файл, который содержит маршруты приложения.
+● asgi.py - файл, который используется для запуска проекта в ASGIсовместимых серверах.
+● wsgi.py - файл, который используется для запуска проекта в WSGIсовместимых серверах.
+
+Запуск сервера
+python manage.py runserver
+
+Важно! Встроенный сервер нельзя использовать в продакшене. Он подходит
+только для разработки проекта.
+В процессе работы над проектом мы будем использовать режим отладки. В
+файле настроек settings.py есть пара строко кода:
+# SECURITY WARNING: don't run with debug turned on in production!
+DEBUG = True
+
+Пара дополнительных параметров runserver
+воспользуемся портом 8080
+python manage.py runserver 8080
+изменить IP-адрес сервера
+python manage.py runserver 0.0.0.0:8080
+Указав в качестве IP нули мы стали прослушивать все адреса
+
+В константу ALLOWED_HOSTS файла settings.py необходимо добавить
+допустимые адреса в виде списка строк. Например так:
+ALLOWED_HOSTS = [
+     '127.0.0.1',
+     '192.168.1.47',
+]
+
+Создание первого приложения
+python manage.py startapp myapp
+
+● myapp/ - директория приложения
+○ migrations/ - директория для хранения миграций базы данных
+■ __init__.py - файл, указывающий на то, что директория
+является пакетом Python
+○ __init__.py - файл, указывающий на то, что директория является
+пакетом Python
+○ admin.py - файл для настройки административного интерфейса
+приложения
+○ apps.py - файл для настройки приложения
+○ models.py - файл, содержащий модели данных приложения
+○ tests.py - файл для написания тестов приложения
+○ views.py - файл, содержащий представления (views) приложения
+● myproject/ - директория проекта
+○ __init__.py - файл, указывающий на то, что директория является
+пакетом Python
+○ settings.py - файл, содержащий настройки проекта
+○ urls.py - файл, содержащий маршруты (routes) для обработки URLадресов
+○ asgi.py - файл для запуска ASGI-сервера (Asynchronous Server
+Gateway Interface)
+○ wsgi.py - файл для запуска WSGI-сервера (Web Server Gateway
+Interface)
+● db.sqlite - файл базы данных SQLite
+● manage.py - файл для управления проектом Django (запуск сервера,
+создание миграций и т.д.)
+
+Добавление приложения в проект
+в настройках проекта (файл settings.py).
+INSTALLED_APPS = [
+ 'django.contrib.admin',
+ 'django.contrib.auth',
+ 'django.contrib.contenttypes',
+ 'django.contrib.sessions',
+ 'django.contrib.messages',
+ 'django.contrib.staticfiles',
+ 'myapp',
+]
+
+Создание представления в приложении
+Для создания представления нужно определить функцию в файле views.py
+from django.http import HttpResponse
+def index(request):
+ return HttpResponse("Hello, world!")
+def about(request):
+ return HttpResponse("About us")
+
+Создаем файл urls.py в директории приложения
