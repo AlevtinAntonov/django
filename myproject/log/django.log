@@ -495,3 +495,88 @@ INFO 2023-08-31 18:59:58,530 basehttp 9228 8036 "GET /hw/home_task/ HTTP/1.1" 20
 INFO 2023-08-31 19:00:04,794 basehttp 9228 8036 "GET /hw/ HTTP/1.1" 200 2710
 INFO 2023-08-31 19:00:06,289 basehttp 9228 8036 "GET /hw/ HTTP/1.1" 200 2710
 INFO 2023-08-31 19:00:12,473 basehttp 9228 8036 "GET /hw/home_task/ HTTP/1.1" 200 752
+INFO 2023-09-01 08:29:48,497 autoreload 1072 12044 Watching for file changes with StatReloader
+INFO 2023-09-01 08:30:05,447 autoreload 1072 12044 C:\PY\django\myproject\s2app\views.py changed, reloading.
+INFO 2023-09-01 08:30:11,091 autoreload 8632 7312 Watching for file changes with StatReloader
+INFO 2023-09-01 08:30:15,187 basehttp 8632 4492 "GET / HTTP/1.1" 200 13
+WARNING 2023-09-01 08:30:15,617 log 8632 4492 Not Found: /favicon.ico
+WARNING 2023-09-01 08:30:15,617 basehttp 8632 4492 "GET /favicon.ico HTTP/1.1" 404 2751
+INFO 2023-09-01 08:30:21,901 basehttp 8632 4492 "GET /s2 HTTP/1.1" 301 0
+ERROR 2023-09-01 08:30:22,378 log 8632 2196 Internal Server Error: /s2/
+Traceback (most recent call last):
+  File "C:\PY\django\venv\Lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PY\django\venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 328, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such table: s2app_gamemodel
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\PY\django\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PY\django\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PY\django\myproject\s2app\views.py", line 13, in index
+    game.save()
+  File "C:\PY\django\venv\Lib\site-packages\django\db\models\base.py", line 814, in save
+    self.save_base(
+  File "C:\PY\django\venv\Lib\site-packages\django\db\models\base.py", line 877, in save_base
+    updated = self._save_table(
+              ^^^^^^^^^^^^^^^^^
+  File "C:\PY\django\venv\Lib\site-packages\django\db\models\base.py", line 1020, in _save_table
+    results = self._do_insert(
+              ^^^^^^^^^^^^^^^^
+  File "C:\PY\django\venv\Lib\site-packages\django\db\models\base.py", line 1061, in _do_insert
+    return manager._insert(
+           ^^^^^^^^^^^^^^^^
+  File "C:\PY\django\venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PY\django\venv\Lib\site-packages\django\db\models\query.py", line 1805, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PY\django\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1822, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\PY\django\venv\Lib\site-packages\django\db\backends\utils.py", line 102, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PY\django\venv\Lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PY\django\venv\Lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PY\django\venv\Lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\PY\django\venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\PY\django\venv\Lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PY\django\venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 328, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: no such table: s2app_gamemodel
+ERROR 2023-09-01 08:30:22,386 basehttp 8632 2196 "GET /s2/ HTTP/1.1" 500 143770
+INFO 2023-09-01 08:49:54,606 autoreload 8340 896 Watching for file changes with StatReloader
+INFO 2023-09-01 08:49:59,066 basehttp 8340 7080 "GET / HTTP/1.1" 200 13
+INFO 2023-09-01 08:50:05,754 basehttp 8340 7080 "GET /s2/ HTTP/1.1" 200 80
+INFO 2023-09-01 08:50:09,123 basehttp 8340 7080 "GET /s2/ HTTP/1.1" 200 80
+INFO 2023-09-01 08:50:10,297 basehttp 8340 7080 "GET /s2/ HTTP/1.1" 200 80
+INFO 2023-09-01 08:50:11,234 basehttp 8340 7080 "GET /s2/ HTTP/1.1" 200 80
+INFO 2023-09-01 08:50:11,909 basehttp 8340 7080 "GET /s2/ HTTP/1.1" 200 80
+INFO 2023-09-01 08:50:12,564 basehttp 8340 7080 "GET /s2/ HTTP/1.1" 200 80
+INFO 2023-09-01 08:50:13,133 basehttp 8340 7080 "GET /s2/ HTTP/1.1" 200 80
+WARNING 2023-09-01 08:50:50,083 log 8340 7080 Not Found: /s2/last_games
+WARNING 2023-09-01 08:50:50,083 basehttp 8340 7080 "GET /s2/last_games HTTP/1.1" 404 3164
+INFO 2023-09-01 08:51:09,804 basehttp 8340 7080 "GET /s2/last HTTP/1.1" 301 0
+INFO 2023-09-01 08:51:09,812 basehttp 8340 1928 "GET /s2/last/ HTTP/1.1" 200 420
+WARNING 2023-09-01 08:51:23,294 log 8340 1928 Not Found: /s2/autor
+WARNING 2023-09-01 08:51:23,294 basehttp 8340 1928 "GET /s2/autor HTTP/1.1" 404 3149
+INFO 2023-09-01 08:51:30,742 basehttp 8340 8768 "GET /s2/author HTTP/1.1" 301 0
+INFO 2023-09-01 08:51:30,750 basehttp 8340 14036 "GET /s2/author/ HTTP/1.1" 200 100

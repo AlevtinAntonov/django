@@ -1,8 +1,11 @@
 from django.urls import path
-from . import views
 
+from s2app import views
+
+app_name = 's2app'
 
 urlpatterns = [
-    path('', views.index, name='hw'),
-    path('heads/', views.head_tails, name='head_tails'),
+    path('', views.index, name='index'),
+    path('last/', views.last_games, name='last_games'),
+    path('author/', views.autor, name='author'),
 ]

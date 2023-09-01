@@ -3,7 +3,7 @@ from random import randint
 from django.http import HttpResponse
 from django.shortcuts import render
 
-from s2app.models import GameModel
+from s2app.models import GameModel, Author
 
 
 def index(request):
@@ -20,7 +20,6 @@ def last_games(request):
     last_str = ['<br>' + str(i) for i in last]
     return HttpResponse(last_str)
 
-
 def autor(request):
     res = Author.objects.all()
     print(res)
@@ -28,4 +27,3 @@ def autor(request):
     for i in res:
         res1 += str(i) + '<br>'
     return HttpResponse(f'{res1}')
-

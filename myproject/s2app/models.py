@@ -20,14 +20,16 @@ class GameModel(models.Model):
 
 
 class Author(models.Model):
-    name = models.CharField(max_length=100)
-    surname = models.CharField(max_length=100)
+    first_name = models.CharField(max_length=100)
+    last_name = models.CharField(max_length=100)
     email = models.EmailField()
-    bio = models.TextField(max_length=1000)
-    bd = models.DateField()
+    bio = models.TextField()
+    dob = models.DateField()
+
+    objects = Manager()
 
     def __str__(self):
-        return f'{self.name} {self.surname}'
+        return f'{self.first_name} {self.last_name}'
 
 
 class Category(models.Model):
@@ -42,6 +44,8 @@ class Post(models.Model):
     category = models.ForeignKey(Category, on_delete=models.DO_NOTHING)
     views = models.IntegerField(default=0)
     publish = models.BooleanField(default=False)
+
+    objects = Manager()
 
     def __str__(self):
         return f'{self.author} - {self.title} - {self.publish}'
