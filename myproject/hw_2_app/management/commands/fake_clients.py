@@ -15,6 +15,6 @@ class Command(BaseCommand):
         for i in range(1, count + 1):
             client = Client(first_name=f'Client{i}',
                             email='mail{i}@mail.ru',
-                            phone=f'+7(812)100-00-0{i}',
+                            phone=f'+7{i:09}',
                             address=f'City-{i}')
             client.save()

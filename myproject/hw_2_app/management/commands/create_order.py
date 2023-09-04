@@ -4,24 +4,46 @@ from decimal import Decimal
 from django.core.management.base import BaseCommand
 from hw_2_app.models import Client, Product, Order
 
-
 class Command(BaseCommand):
-    help = "Create order."
+    help = "Generate fake orders."
 
-    # def add_arguments(self, parser):
-    #     parser.add_argument('client', type=int, help='client ID')
-    #     parser.add_argument('product', type=int, help='product ID')
-    #     parser.add_argument('total_sum', type=float, help='Total sum')
+    def add_arguments(self, parser):
+        parser.add_argument('count', type=int, help='Count orders')
 
     def handle(self, *args, **kwargs):
-        client = Client.objects.get(pk=kwargs.get('client'))
-        product = Product.objects.get(pk=kwargs.get('product'))
-        total_sum = Order.objects.get(total_sum=kwargs.get(''))
+        count = kwargs.get('count')
 
-        order = Order(client=client,
-                      product=product,
-                      total_sum=Decimal(total_sum))
+        clients = []
+        products = []
 
-        order.save()
+        for i in range(1, count + 1):
+            client = Client(
+                first_name=f'Name{i}',
+                email=f'mail{i}@mail.ru',
+                phone=f'+7{i:09}',
+                address=f'City-{i}'
 
-        self.stdout.write(f'done, order pk = {order.pk}')
+            )
+            client.save()
+            clients.append(client)
+
+        for j in range(1, count + 1):
+            product = Product(
+                name=f'Product{j}',
+                description=f'Product Description - {j}',
+                price=random.randint(1, 10),
+                date_add_product='2023-09-01',
+            )
+            product.save()
+            products.append(product)
+
+        for k in range(1, count + 1):
+            order = Order(client=random.choice(clients), total_sum=0)
+            order.save()
+            selected_products = [random.choice(products) for i in range(5)]
+            for product in selected_products:
+                order.products.add(product)
+            order.total_sum = sum(product.price for product in selected_products)
+            order.save()
+
+        self.stdout.write('Fake orders added')
