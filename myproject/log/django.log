@@ -640,3 +640,61 @@ WARNING 2023-09-04 10:57:14,715 basehttp 14852 13168 "GET /les3/author_posts/5 H
 INFO 2023-09-04 10:57:33,229 basehttp 14852 13908 "GET /les3/author/5 HTTP/1.1" 301 0
 INFO 2023-09-04 10:57:33,265 basehttp 14852 14428 "GET /les3/author/5/ HTTP/1.1" 200 1225
 INFO 2023-09-04 10:57:36,430 basehttp 14852 14428 "GET /les3/post/34/ HTTP/1.1" 200 591
+INFO 2023-09-05 16:20:20,316 autoreload 12287 140660356145152 Watching for file changes with StatReloader
+INFO 2023-09-05 16:21:06,912 autoreload 12448 140402560884736 Watching for file changes with StatReloader
+INFO 2023-09-05 16:21:10,663 basehttp 12448 140402508166720 "GET / HTTP/1.1" 200 13
+WARNING 2023-09-05 16:21:10,711 log 12448 140402508166720 Not Found: /favicon.ico
+WARNING 2023-09-05 16:21:10,712 basehttp 12448 140402508166720 "GET /favicon.ico HTTP/1.1" 404 2961
+INFO 2023-09-05 16:21:27,804 basehttp 12448 140402508166720 "GET /les4/user/add HTTP/1.1" 301 0
+INFO 2023-09-05 16:21:27,814 basehttp 12448 140402499774016 "GET /les4/user/add/ HTTP/1.1" 200 692
+INFO 2023-09-05 16:23:13,398 basehttp 12448 140402499774016 "GET /les4/user/add/ HTTP/1.1" 200 716
+INFO 2023-09-05 16:24:37,283 basehttp 12448 140402499774016 "GET /les4/user/add/ HTTP/1.1" 200 941
+INFO 2023-09-05 16:25:32,915 basehttp 12448 140402499774016 "POST /les4/user/add/ HTTP/1.1" 200 988
+INFO 2023-09-05 16:26:11,380 basehttp 12448 140402499774016 "POST /les4/user/add/ HTTP/1.1" 200 992
+INFO 2023-09-05 16:31:44,120 autoreload 12448 140402560884736 /home/alevtin/PycharmProjects/django/myproject/myapp4/forms.py changed, reloading.
+INFO 2023-09-05 16:31:44,353 autoreload 14245 139756826148864 Watching for file changes with StatReloader
+INFO 2023-09-05 16:34:52,317 autoreload 14245 139756826148864 /home/alevtin/PycharmProjects/django/myproject/myapp4/urls.py changed, reloading.
+INFO 2023-09-05 16:34:52,534 autoreload 14737 140067755577344 Watching for file changes with StatReloader
+INFO 2023-09-05 16:35:26,660 basehttp 14737 140067703092800 "GET /les4/forms HTTP/1.1" 301 0
+INFO 2023-09-05 16:35:26,675 basehttp 14737 140067694700096 "GET /les4/forms/ HTTP/1.1" 200 1477
+INFO 2023-09-05 16:36:00,382 basehttp 14737 140067694700096 "POST /les4/forms/ HTTP/1.1" 200 1571
+INFO 2023-09-05 16:44:52,752 autoreload 14737 140067755577344 /home/alevtin/PycharmProjects/django/myproject/myapp4/forms.py changed, reloading.
+INFO 2023-09-05 16:44:52,983 autoreload 16127 140616211300352 Watching for file changes with StatReloader
+INFO 2023-09-05 16:44:57,696 basehttp 16127 140616088417856 "POST /les4/forms/ HTTP/1.1" 200 2250
+INFO 2023-09-05 16:45:29,018 basehttp 16127 140616088417856 "POST /les4/forms/ HTTP/1.1" 200 2204
+INFO 2023-09-05 16:47:19,805 autoreload 16127 140616211300352 /home/alevtin/PycharmProjects/django/myproject/myapp4/forms.py changed, reloading.
+INFO 2023-09-05 16:47:20,041 autoreload 16467 140523068149760 Watching for file changes with StatReloader
+INFO 2023-09-05 16:47:23,046 basehttp 16467 140522941314624 "POST /les4/forms/ HTTP/1.1" 200 2204
+INFO 2023-09-05 16:52:53,781 autoreload 16467 140523068149760 /home/alevtin/PycharmProjects/django/myproject/myapp4/forms.py changed, reloading.
+INFO 2023-09-05 16:52:53,998 autoreload 17222 140687172546560 Watching for file changes with StatReloader
+INFO 2023-09-05 16:53:55,432 autoreload 17222 140687172546560 /home/alevtin/PycharmProjects/django/myproject/myapp4/models.py changed, reloading.
+INFO 2023-09-05 16:53:55,655 autoreload 17376 140120570179584 Watching for file changes with StatReloader
+INFO 2023-09-05 16:59:16,261 autoreload 18140 140170805633024 Watching for file changes with StatReloader
+INFO 2023-09-05 16:59:27,296 basehttp 18140 140170682693184 "GET /les4/user HTTP/1.1" 301 0
+INFO 2023-09-05 16:59:27,306 basehttp 18140 140170674300480 "GET /les4/user/ HTTP/1.1" 200 980
+INFO 2023-09-05 17:02:10,714 basehttp 18140 140170674300480 "GET /les4/user/ HTTP/1.1" 200 919
+INFO 2023-09-05 17:02:46,814 basehttp 18140 140170674300480 "POST /les4/user/ HTTP/1.1" 200 1059
+INFO 2023-09-05 17:03:08,264 basehttp 18140 140170674300480 "POST /les4/user/ HTTP/1.1" 200 976
+INFO 2023-09-05 17:07:06,761 autoreload 18140 140170805633024 /home/alevtin/PycharmProjects/django/myproject/myapp4/forms.py changed, reloading.
+INFO 2023-09-05 17:07:06,986 autoreload 19307 140324387414016 Watching for file changes with StatReloader
+INFO 2023-09-05 17:07:34,233 autoreload 19307 140324387414016 /home/alevtin/PycharmProjects/django/myproject/my_project/settings.py changed, reloading.
+INFO 2023-09-05 17:07:34,456 autoreload 19395 140175838089216 Watching for file changes with StatReloader
+INFO 2023-09-05 17:09:47,249 autoreload 19395 140175838089216 /home/alevtin/PycharmProjects/django/myproject/myapp4/views.py changed, reloading.
+INFO 2023-09-05 17:09:47,468 autoreload 19687 140350440476672 Watching for file changes with StatReloader
+INFO 2023-09-05 17:10:53,923 autoreload 19687 140350440476672 /home/alevtin/PycharmProjects/django/myproject/myapp4/urls.py changed, reloading.
+INFO 2023-09-05 17:10:54,154 autoreload 19883 139974290350080 Watching for file changes with StatReloader
+INFO 2023-09-05 17:12:48,750 basehttp 19883 139974237222464 "GET /les4/upload HTTP/1.1" 301 0
+ERROR 2023-09-05 17:12:48,773 log 19883 139974228829760 Internal Server Error: /les4/upload/
+Traceback (most recent call last):
+  File "/home/alevtin/PycharmProjects/django/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/alevtin/PycharmProjects/django/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/alevtin/PycharmProjects/django/myproject/myapp4/views.py", line 57, in upload_image
+    if form.is_valid():
+UnboundLocalError: local variable 'form' referenced before assignment
+ERROR 2023-09-05 17:12:48,774 basehttp 19883 139974228829760 "GET /les4/upload/ HTTP/1.1" 500 67159
+INFO 2023-09-05 17:13:34,061 autoreload 19883 139974290350080 /home/alevtin/PycharmProjects/django/myproject/myapp4/views.py changed, reloading.
+INFO 2023-09-05 17:13:34,280 autoreload 20328 139963076702208 Watching for file changes with StatReloader
+INFO 2023-09-05 17:13:35,224 basehttp 20328 139963023750720 "GET /les4/upload/ HTTP/1.1" 200 624
+INFO 2023-09-05 17:14:11,811 basehttp 20328 139963023750720 "POST /les4/upload/ HTTP/1.1" 200 624
