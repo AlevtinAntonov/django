@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'myapp4',
     'hw_1_app',
     'hw_2_app',
+    'hw_3_app',
     's1app',
     's2app',
 ]

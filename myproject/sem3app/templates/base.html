@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Заголовок{% endblock %}</title>
+    <meta property="og:title" content="Заголовок страницы в OG">
+    <meta property="og:description" content="Описание страницы в OG">
+  </head>
+  <body>
+    <header>
+        {% block content %}
+        <p>Скоро тут появится текст...</p>
+        {% endblock %}
+
+    <footer>
+      <a href="https://gb.ru/">GeekBrains - образовательный портал</a>
+    </footer>
+  </body>
+</html>
