@@ -24,6 +24,12 @@ class Product(models.Model):
     def __str__(self):
         return f'{self.name} - {self.price} - {self.description}'
 
+    def get_full_info(self):
+        return (f'{self.name}:\n'
+                f'{"Price":<15}{self.price}\n'
+                f'{"added on:":<15}{self.date_add_product}\n'
+                f'{"Description:":<15}{self.description}\n')
+
 
 class Order(models.Model):
     client = models.ForeignKey(Client, on_delete=models.DO_NOTHING)
@@ -33,3 +39,8 @@ class Order(models.Model):
 
     def __str__(self):
         return f'{self.client} - {self.product} - {self.total_sum}'
+
+    def get_full_info(self):
+        return (f'{"Customer:":<15}{self.client.name} ({self.client.email})\n'
+                f'{"Total price:":<15}{self.total_sum}\n'
+                f'{"Order date:":<15}{self.date_of_order}')
