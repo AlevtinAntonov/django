@@ -1,0 +1,13 @@
+{% extends 's3app/base.html' %}
+{% block title %}{{ title }}{% endblock %}
+
+{% block content %}
+    <h1>{{ title }}</h1>
+    {% for o in order %}
+
+            <a href="{% url 'hw_3_app:products_orders' product.pk %}"><p>{{ o }}</p></a>
+
+            <p>{{ o }}</p>
+        {% endif %}
+    {% endfor %}
+{% endblock %}

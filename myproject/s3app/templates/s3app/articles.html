@@ -1,0 +1,13 @@
+{% extends 's3app/base.html' %}
+{% block title %}{{ title }}{% endblock %}
+
+{% block content %}
+    <h1>{{ title }}</h1>
+    {% for post in posts %}
+        {% if post.publish %}
+            <a href="{% url 's3app:article_page' post.pk %}"><p>{{ post }}</p></a>
+        {% else %}
+            <p>{{ post }}</p>
+        {% endif %}
+    {% endfor %}
+{% endblock %}
