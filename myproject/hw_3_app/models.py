@@ -32,8 +32,8 @@ class Product(models.Model):
 
 
 class Order(models.Model):
-    client = models.ForeignKey(Client, on_delete=models.DO_NOTHING)
-    product = models.ForeignKey(Product, on_delete=models.DO_NOTHING)
+    client = models.ForeignKey(Client, on_delete=models.CASCADE)
+    product = models.ManyToManyField(Product)
     total_sum = models.DecimalField(max_digits=7, decimal_places=2)
     date_of_order = models.DateTimeField(auto_now_add=True)
 

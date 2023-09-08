@@ -1108,3 +1108,20 @@ Traceback (most recent call last):
     raise self.error(
 django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 11: 'endif', expected 'empty' or 'endfor'. Did you forget to register or load this tag?
 ERROR 2023-09-07 10:03:55,079 basehttp 11520 12012 "GET /hw3/product_orders/5 HTTP/1.1" 500 181324
+INFO 2023-09-08 17:07:28,849 autoreload 8328 140395072864256 Watching for file changes with StatReloader
+INFO 2023-09-08 17:07:58,542 basehttp 8328 140395020285504 "GET /hw3/products HTTP/1.1" 301 0
+INFO 2023-09-08 17:07:58,550 basehttp 8328 140395010844224 "GET /hw3/products/ HTTP/1.1" 200 1884
+INFO 2023-09-08 17:08:58,885 autoreload 8328 140395072864256 /home/alevtin/GB/Flask/django/myproject/hw_3_app/models.py changed, reloading.
+INFO 2023-09-08 17:08:59,470 autoreload 8381 140577258311680 Watching for file changes with StatReloader
+INFO 2023-09-08 17:51:20,044 autoreload 9260 139827875176448 Watching for file changes with StatReloader
+INFO 2023-09-08 17:51:45,472 autoreload 9260 139827875176448 /home/alevtin/GB/Flask/django/myproject/my_project/settings.py changed, reloading.
+INFO 2023-09-08 17:51:46,218 autoreload 9278 139914608586752 Watching for file changes with StatReloader
+INFO 2023-09-08 17:51:50,024 basehttp 9278 139914555422272 "GET / HTTP/1.1" 200 13
+INFO 2023-09-08 17:52:02,884 basehttp 9278 139914555422272 "GET /hw3 HTTP/1.1" 301 0
+INFO 2023-09-08 17:52:02,897 basehttp 9278 139914547029568 "GET /hw3/ HTTP/1.1" 200 1021
+INFO 2023-09-08 17:52:33,917 basehttp 9278 139914547029568 "GET /hw3/product_orders/10 HTTP/1.1" 200 369
+INFO 2023-09-08 17:52:40,223 basehttp 9278 139914547029568 "GET /hw3/product_orders/5 HTTP/1.1" 200 369
+INFO 2023-09-08 17:53:38,003 basehttp 9278 139914547029568 "GET /hw3/product_orders/5 HTTP/1.1" 200 369
+WARNING 2023-09-08 17:53:48,020 log 9278 139914547029568 Not Found: /hw3/product_orders/
+WARNING 2023-09-08 17:53:48,020 basehttp 9278 139914547029568 "GET /hw3/product_orders/ HTTP/1.1" 404 4257
+INFO 2023-09-08 17:53:53,628 basehttp 9278 139914547029568 "GET /hw3/product_orders/5 HTTP/1.1" 200 369

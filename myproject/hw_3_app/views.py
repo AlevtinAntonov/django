@@ -62,7 +62,6 @@ class ProductsFromOrders(ListView):
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
         client = Client.objects.get(pk=self.kwargs['pk'])
-        order = Order.objects.filter(client=client).all()
-        context['order'] = order
-        context['title'] = f'Заказы клиента {client}'
+        orders = Order.objects.filter(client=client).all()
+        context['order'] = orders
         return context
