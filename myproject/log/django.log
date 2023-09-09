@@ -1125,3 +1125,257 @@ INFO 2023-09-08 17:53:38,003 basehttp 9278 139914547029568 "GET /hw3/product_ord
 WARNING 2023-09-08 17:53:48,020 log 9278 139914547029568 Not Found: /hw3/product_orders/
 WARNING 2023-09-08 17:53:48,020 basehttp 9278 139914547029568 "GET /hw3/product_orders/ HTTP/1.1" 404 4257
 INFO 2023-09-08 17:53:53,628 basehttp 9278 139914547029568 "GET /hw3/product_orders/5 HTTP/1.1" 200 369
+INFO 2023-09-09 06:11:39,299 autoreload 4662 139851009572864 Watching for file changes with StatReloader
+INFO 2023-09-09 07:34:26,498 autoreload 5752 140514313822208 Watching for file changes with StatReloader
+INFO 2023-09-09 07:34:29,389 basehttp 5752 140514261202496 "GET / HTTP/1.1" 200 13
+WARNING 2023-09-09 07:34:29,698 log 5752 140514261202496 Not Found: /favicon.ico
+WARNING 2023-09-09 07:34:29,701 basehttp 5752 140514261202496 "GET /favicon.ico HTTP/1.1" 404 3375
+INFO 2023-09-09 07:34:57,852 basehttp 5752 140514261202496 "GET /s4 HTTP/1.1" 301 0
+INFO 2023-09-09 07:34:57,888 basehttp 5752 140514251761216 "GET /s4/ HTTP/1.1" 200 502
+INFO 2023-09-09 07:34:57,926 basehttp 5752 140514251761216 "GET /static/css/bootstrap.css HTTP/1.1" 200 287892
+INFO 2023-09-09 07:35:27,230 basehttp 5752 140514251761216 "GET /s4/about/ HTTP/1.1" 200 497
+INFO 2023-09-09 07:35:42,461 basehttp 5752 140514251761216 "GET /s4/heads_game/5 HTTP/1.1" 200 634
+INFO 2023-09-09 07:36:07,775 basehttp 5752 140514251761216 "GET /s4/dice_game/5 HTTP/1.1" 200 590
+INFO 2023-09-09 07:36:07,804 basehttp 5752 140514251761216 "GET /static/css/bootstrap.css HTTP/1.1" 304 0
+ERROR 2023-09-09 07:36:24,003 log 5752 140514251761216 Internal Server Error: /s4/articles/5
+Traceback (most recent call last):
+  File "/home/alevtin/GB/Flask/django/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/alevtin/GB/Flask/django/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/alevtin/GB/Flask/django/venv/lib/python3.10/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/alevtin/GB/Flask/django/venv/lib/python3.10/site-packages/django/views/generic/base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/alevtin/GB/Flask/django/venv/lib/python3.10/site-packages/django/views/generic/base.py", line 226, in get
+    context = self.get_context_data(**kwargs)
+  File "/home/alevtin/GB/Flask/django/myproject/seminar_app/views.py", line 61, in get_context_data
+    author = Author.objects.get(pk=self.kwargs['pk'])
+  File "/home/alevtin/GB/Flask/django/venv/lib/python3.10/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/alevtin/GB/Flask/django/venv/lib/python3.10/site-packages/django/db/models/query.py", line 637, in get
+    raise self.model.DoesNotExist(
+seminar_app.models.Author.DoesNotExist: Author matching query does not exist.
+ERROR 2023-09-09 07:36:24,010 basehttp 5752 140514251761216 "GET /s4/articles/5 HTTP/1.1" 500 90899
+WARNING 2023-09-09 07:36:48,243 log 5752 140514251761216 Not Found: /s4/article/5
+WARNING 2023-09-09 07:36:48,245 basehttp 5752 140514251761216 "GET /s4/article/5 HTTP/1.1" 404 4549
+WARNING 2023-09-09 07:37:39,803 log 5752 140514251761216 Not Found: /s4/article/
+WARNING 2023-09-09 07:37:39,804 basehttp 5752 140514251761216 "GET /s4/article/ HTTP/1.1" 404 5621
+INFO 2023-09-09 07:37:50,222 basehttp 5752 140514251761216 "GET /s4/author/ HTTP/1.1" 200 0
+INFO 2023-09-09 07:38:11,469 basehttp 5752 140514251761216 "GET /s4/add_author/ HTTP/1.1" 200 1387
+INFO 2023-09-09 07:38:11,498 basehttp 5752 140514251761216 "GET /static/css/bootstrap.css HTTP/1.1" 304 0
+INFO 2023-09-09 07:38:40,916 basehttp 5752 140514251761216 "GET /s4/article/add HTTP/1.1" 200 1340
+INFO 2023-09-09 07:48:52,926 autoreload 6393 139980866613248 Watching for file changes with StatReloader
+INFO 2023-09-09 07:49:14,683 basehttp 6393 139980813891136 "GET /s4/author/ HTTP/1.1" 200 0
+INFO 2023-09-09 07:49:18,586 basehttp 6393 139980813891136 "GET /s4/author/ HTTP/1.1" 200 0
+INFO 2023-09-09 07:49:19,571 basehttp 6393 139980813891136 "GET /s4/author/ HTTP/1.1" 200 0
+INFO 2023-09-09 07:49:39,190 basehttp 6393 139980813891136 "GET /s4/add_author/ HTTP/1.1" 200 1387
+INFO 2023-09-09 07:49:39,208 basehttp 6393 139980813891136 "GET /static/css/bootstrap.css HTTP/1.1" 304 0
+ERROR 2023-09-09 07:51:26,504 log 6393 139980813891136 Internal Server Error: /s4/add_author/
+Traceback (most recent call last):
+  File "/home/alevtin/GB/Flask/django/venv/lib/python3.10/site-packages/django/db/utils.py", line 98, in inner
+    return func(*args, **kwargs)
+sqlite3.OperationalError: database is locked
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/alevtin/GB/Flask/django/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/alevtin/GB/Flask/django/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/alevtin/GB/Flask/django/venv/lib/python3.10/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/alevtin/GB/Flask/django/venv/lib/python3.10/site-packages/django/views/generic/base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/alevtin/GB/Flask/django/venv/lib/python3.10/site-packages/django/views/generic/edit.py", line 184, in post
+    return super().post(request, *args, **kwargs)
+  File "/home/alevtin/GB/Flask/django/venv/lib/python3.10/site-packages/django/views/generic/edit.py", line 153, in post
+    return self.form_valid(form)
+  File "/home/alevtin/GB/Flask/django/venv/lib/python3.10/site-packages/django/views/generic/edit.py", line 135, in form_valid
+    self.object = form.save()
+  File "/home/alevtin/GB/Flask/django/venv/lib/python3.10/site-packages/django/forms/models.py", line 542, in save
+    self.instance.save()
+  File "/home/alevtin/GB/Flask/django/venv/lib/python3.10/site-packages/django/db/models/base.py", line 814, in save
+    self.save_base(
+  File "/home/alevtin/GB/Flask/django/venv/lib/python3.10/site-packages/django/db/models/base.py", line 877, in save_base
+    updated = self._save_table(
+  File "/home/alevtin/GB/Flask/django/venv/lib/python3.10/site-packages/django/db/models/base.py", line 1020, in _save_table
+    results = self._do_insert(
+  File "/home/alevtin/GB/Flask/django/venv/lib/python3.10/site-packages/django/db/models/base.py", line 1061, in _do_insert
+    return manager._insert(
+  File "/home/alevtin/GB/Flask/django/venv/lib/python3.10/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/alevtin/GB/Flask/django/venv/lib/python3.10/site-packages/django/db/models/query.py", line 1805, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+  File "/home/alevtin/GB/Flask/django/venv/lib/python3.10/site-packages/django/db/models/sql/compiler.py", line 1833, in execute_sql
+    self.connection.ops.fetch_returned_insert_columns(
+  File "/home/alevtin/GB/Flask/django/venv/lib/python3.10/site-packages/django/db/backends/base/operations.py", line 213, in fetch_returned_insert_columns
+    return cursor.fetchone()
+  File "/home/alevtin/GB/Flask/django/venv/lib/python3.10/site-packages/django/db/utils.py", line 97, in inner
+    with self:
+  File "/home/alevtin/GB/Flask/django/venv/lib/python3.10/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/alevtin/GB/Flask/django/venv/lib/python3.10/site-packages/django/db/utils.py", line 98, in inner
+    return func(*args, **kwargs)
+django.db.utils.OperationalError: database is locked
+ERROR 2023-09-09 07:51:26,510 basehttp 6393 139980813891136 "POST /s4/add_author/ HTTP/1.1" 500 152461
+INFO 2023-09-09 07:51:48,909 basehttp 6393 139980813891136 "POST /s4/add_author/ HTTP/1.1" 302 0
+INFO 2023-09-09 07:51:48,920 basehttp 6393 139980813891136 "GET /s4/author_page/1 HTTP/1.1" 200 443
+INFO 2023-09-09 07:52:06,708 basehttp 6393 139980813891136 "GET /s4/author_page/1 HTTP/1.1" 200 443
+INFO 2023-09-09 07:52:37,257 basehttp 6393 139980813891136 "GET /s4/add_author/ HTTP/1.1" 200 1387
+INFO 2023-09-09 07:52:37,296 basehttp 6393 139980813891136 "GET /static/css/bootstrap.css HTTP/1.1" 304 0
+INFO 2023-09-09 07:53:13,673 basehttp 6393 139980813891136 "POST /s4/add_author/ HTTP/1.1" 302 0
+INFO 2023-09-09 07:53:13,680 basehttp 6393 139980813891136 "GET /s4/author_page/2 HTTP/1.1" 200 443
+INFO 2023-09-09 07:53:36,033 basehttp 6393 139980813891136 "POST /s4/add_author/ HTTP/1.1" 302 0
+INFO 2023-09-09 07:53:36,042 basehttp 6393 139980813891136 "GET /s4/author_page/3 HTTP/1.1" 200 443
+INFO 2023-09-09 07:53:44,382 basehttp 6393 139980813891136 "GET /s4/author HTTP/1.1" 301 0
+INFO 2023-09-09 07:53:44,400 basehttp 6393 139980813891136 "GET /s4/author/ HTTP/1.1" 200 75
+INFO 2023-09-09 07:54:11,044 basehttp 6393 139980813891136 "GET /s4/article/add HTTP/1.1" 200 1496
+INFO 2023-09-09 07:57:12,840 basehttp 6393 139980813891136 "GET /s4/article/add HTTP/1.1" 200 1496
+INFO 2023-09-09 07:57:12,898 basehttp 6393 139980813891136 "GET /static/css/bootstrap.css HTTP/1.1" 304 0
+INFO 2023-09-09 08:04:22,209 autoreload 7083 139844203606016 Watching for file changes with StatReloader
+WARNING 2023-09-09 08:04:33,283 log 7083 139844150883904 Not Found: /s4/categorye/add
+WARNING 2023-09-09 08:04:33,286 basehttp 7083 139844150883904 "GET /s4/categorye/add HTTP/1.1" 404 5819
+ERROR 2023-09-09 08:04:41,756 log 7083 139844150883904 Internal Server Error: /s4/category/add
+Traceback (most recent call last):
+  File "/home/alevtin/GB/Flask/django/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/alevtin/GB/Flask/django/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+  File "/home/alevtin/GB/Flask/django/venv/lib/python3.10/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+  File "/home/alevtin/GB/Flask/django/venv/lib/python3.10/site-packages/django/template/response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "/home/alevtin/GB/Flask/django/venv/lib/python3.10/site-packages/django/template/response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+  File "/home/alevtin/GB/Flask/django/venv/lib/python3.10/site-packages/django/template/loader.py", line 47, in select_template
+    raise TemplateDoesNotExist(", ".join(template_name_list), chain=chain)
+django.template.exceptions.TemplateDoesNotExist: seminar_app/add_category.html
+ERROR 2023-09-09 08:04:41,760 basehttp 7083 139844150883904 "GET /s4/category/add HTTP/1.1" 500 85211
+INFO 2023-09-09 08:05:32,076 basehttp 7083 139844150883904 "GET /s4/category/add HTTP/1.1" 200 795
+INFO 2023-09-09 08:05:32,100 basehttp 7083 139844150883904 "GET /static/css/bootstrap.css HTTP/1.1" 304 0
+ERROR 2023-09-09 08:05:45,672 log 7083 139844150883904 Internal Server Error: /s4/category/add
+Traceback (most recent call last):
+  File "/home/alevtin/GB/Flask/django/venv/lib/python3.10/site-packages/django/views/generic/edit.py", line 125, in get_success_url
+    url = self.object.get_absolute_url()
+AttributeError: 'Category' object has no attribute 'get_absolute_url'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/alevtin/GB/Flask/django/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/alevtin/GB/Flask/django/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/alevtin/GB/Flask/django/venv/lib/python3.10/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/alevtin/GB/Flask/django/venv/lib/python3.10/site-packages/django/views/generic/base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/alevtin/GB/Flask/django/venv/lib/python3.10/site-packages/django/views/generic/edit.py", line 184, in post
+    return super().post(request, *args, **kwargs)
+  File "/home/alevtin/GB/Flask/django/venv/lib/python3.10/site-packages/django/views/generic/edit.py", line 153, in post
+    return self.form_valid(form)
+  File "/home/alevtin/GB/Flask/django/venv/lib/python3.10/site-packages/django/views/generic/edit.py", line 136, in form_valid
+    return super().form_valid(form)
+  File "/home/alevtin/GB/Flask/django/venv/lib/python3.10/site-packages/django/views/generic/edit.py", line 65, in form_valid
+    return HttpResponseRedirect(self.get_success_url())
+  File "/home/alevtin/GB/Flask/django/venv/lib/python3.10/site-packages/django/views/generic/edit.py", line 127, in get_success_url
+    raise ImproperlyConfigured(
+django.core.exceptions.ImproperlyConfigured: No URL to redirect to.  Either provide a url or define a get_absolute_url method on the Model.
+ERROR 2023-09-09 08:05:45,678 basehttp 7083 139844150883904 "POST /s4/category/add HTTP/1.1" 500 100701
+ERROR 2023-09-09 08:06:50,544 log 7083 139844150883904 Internal Server Error: /s4/category/add
+Traceback (most recent call last):
+  File "/home/alevtin/GB/Flask/django/venv/lib/python3.10/site-packages/django/views/generic/edit.py", line 125, in get_success_url
+    url = self.object.get_absolute_url()
+AttributeError: 'Category' object has no attribute 'get_absolute_url'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/alevtin/GB/Flask/django/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/alevtin/GB/Flask/django/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/alevtin/GB/Flask/django/venv/lib/python3.10/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/alevtin/GB/Flask/django/venv/lib/python3.10/site-packages/django/views/generic/base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/alevtin/GB/Flask/django/venv/lib/python3.10/site-packages/django/views/generic/edit.py", line 184, in post
+    return super().post(request, *args, **kwargs)
+  File "/home/alevtin/GB/Flask/django/venv/lib/python3.10/site-packages/django/views/generic/edit.py", line 153, in post
+    return self.form_valid(form)
+  File "/home/alevtin/GB/Flask/django/venv/lib/python3.10/site-packages/django/views/generic/edit.py", line 136, in form_valid
+    return super().form_valid(form)
+  File "/home/alevtin/GB/Flask/django/venv/lib/python3.10/site-packages/django/views/generic/edit.py", line 65, in form_valid
+    return HttpResponseRedirect(self.get_success_url())
+  File "/home/alevtin/GB/Flask/django/venv/lib/python3.10/site-packages/django/views/generic/edit.py", line 127, in get_success_url
+    raise ImproperlyConfigured(
+django.core.exceptions.ImproperlyConfigured: No URL to redirect to.  Either provide a url or define a get_absolute_url method on the Model.
+ERROR 2023-09-09 08:06:50,550 basehttp 7083 139844150883904 "POST /s4/category/add HTTP/1.1" 500 100701
+ERROR 2023-09-09 08:06:58,151 log 7083 139844150883904 Internal Server Error: /s4/category/add
+Traceback (most recent call last):
+  File "/home/alevtin/GB/Flask/django/venv/lib/python3.10/site-packages/django/views/generic/edit.py", line 125, in get_success_url
+    url = self.object.get_absolute_url()
+AttributeError: 'Category' object has no attribute 'get_absolute_url'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/alevtin/GB/Flask/django/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/alevtin/GB/Flask/django/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/alevtin/GB/Flask/django/venv/lib/python3.10/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/alevtin/GB/Flask/django/venv/lib/python3.10/site-packages/django/views/generic/base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/alevtin/GB/Flask/django/venv/lib/python3.10/site-packages/django/views/generic/edit.py", line 184, in post
+    return super().post(request, *args, **kwargs)
+  File "/home/alevtin/GB/Flask/django/venv/lib/python3.10/site-packages/django/views/generic/edit.py", line 153, in post
+    return self.form_valid(form)
+  File "/home/alevtin/GB/Flask/django/venv/lib/python3.10/site-packages/django/views/generic/edit.py", line 136, in form_valid
+    return super().form_valid(form)
+  File "/home/alevtin/GB/Flask/django/venv/lib/python3.10/site-packages/django/views/generic/edit.py", line 65, in form_valid
+    return HttpResponseRedirect(self.get_success_url())
+  File "/home/alevtin/GB/Flask/django/venv/lib/python3.10/site-packages/django/views/generic/edit.py", line 127, in get_success_url
+    raise ImproperlyConfigured(
+django.core.exceptions.ImproperlyConfigured: No URL to redirect to.  Either provide a url or define a get_absolute_url method on the Model.
+ERROR 2023-09-09 08:06:58,153 basehttp 7083 139844150883904 "POST /s4/category/add HTTP/1.1" 500 100701
+INFO 2023-09-09 08:10:32,255 basehttp 7083 139844150883904 "GET /s4/article/add HTTP/1.1" 200 1646
+INFO 2023-09-09 08:10:32,312 basehttp 7083 139844150883904 "GET /static/css/bootstrap.css HTTP/1.1" 304 0
+INFO 2023-09-09 08:10:58,088 basehttp 7083 139844150883904 "POST /s4/article/add HTTP/1.1" 302 0
+ERROR 2023-09-09 08:10:58,549 log 7083 139844150883904 Internal Server Error: /s4/article/1
+Traceback (most recent call last):
+  File "/home/alevtin/GB/Flask/django/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/alevtin/GB/Flask/django/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+  File "/home/alevtin/GB/Flask/django/venv/lib/python3.10/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+  File "/home/alevtin/GB/Flask/django/venv/lib/python3.10/site-packages/django/template/response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "/home/alevtin/GB/Flask/django/venv/lib/python3.10/site-packages/django/template/response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+  File "/home/alevtin/GB/Flask/django/venv/lib/python3.10/site-packages/django/template/loader.py", line 47, in select_template
+    raise TemplateDoesNotExist(", ".join(template_name_list), chain=chain)
+django.template.exceptions.TemplateDoesNotExist: seminar_app/article_page.html
+ERROR 2023-09-09 08:10:58,552 basehttp 7083 139844150883904 "GET /s4/article/1 HTTP/1.1" 500 85503
+ERROR 2023-09-09 08:11:32,902 log 7083 139844150883904 Internal Server Error: /s4/article/1
+Traceback (most recent call last):
+  File "/home/alevtin/GB/Flask/django/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/alevtin/GB/Flask/django/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+  File "/home/alevtin/GB/Flask/django/venv/lib/python3.10/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+  File "/home/alevtin/GB/Flask/django/venv/lib/python3.10/site-packages/django/template/response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "/home/alevtin/GB/Flask/django/venv/lib/python3.10/site-packages/django/template/response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+  File "/home/alevtin/GB/Flask/django/venv/lib/python3.10/site-packages/django/template/loader.py", line 47, in select_template
+    raise TemplateDoesNotExist(", ".join(template_name_list), chain=chain)
+django.template.exceptions.TemplateDoesNotExist: seminar_app/article_page.html
+ERROR 2023-09-09 08:11:32,912 basehttp 7083 139844150883904 "GET /s4/article/1 HTTP/1.1" 500 85503
+INFO 2023-09-09 08:13:41,129 autoreload 7083 139844203606016 /home/alevtin/GB/Flask/django/myproject/seminar_app/views.py changed, reloading.
+INFO 2023-09-09 08:13:41,721 autoreload 7864 140486345711616 Watching for file changes with StatReloader

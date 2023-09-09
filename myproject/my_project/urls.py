@@ -28,4 +28,5 @@ urlpatterns = [
     path('s1/', include('s1app.urls')),
     path('s2/', include('s2app.urls')),
     path('s3/', include('s3app.urls')),
+    path('s4/', include('seminar_app.urls')),
 ]

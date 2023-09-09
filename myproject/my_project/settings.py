@@ -47,6 +47,7 @@ INSTALLED_APPS = [
     's1app',
     's2app',
     's3app',
+    'seminar_app',
 ]
 
 MIDDLEWARE = [
