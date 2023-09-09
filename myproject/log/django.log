@@ -698,3 +698,430 @@ INFO 2023-09-05 17:13:34,061 autoreload 19883 139974290350080 /home/alevtin/Pych
 INFO 2023-09-05 17:13:34,280 autoreload 20328 139963076702208 Watching for file changes with StatReloader
 INFO 2023-09-05 17:13:35,224 basehttp 20328 139963023750720 "GET /les4/upload/ HTTP/1.1" 200 624
 INFO 2023-09-05 17:14:11,811 basehttp 20328 139963023750720 "POST /les4/upload/ HTTP/1.1" 200 624
+INFO 2023-09-06 20:30:59,020 autoreload 1404 13116 Watching for file changes with StatReloader
+INFO 2023-09-06 20:31:01,800 basehttp 1404 10236 "GET / HTTP/1.1" 200 13
+WARNING 2023-09-06 20:31:01,880 log 1404 10236 Not Found: /favicon.ico
+WARNING 2023-09-06 20:31:01,880 basehttp 1404 10236 "GET /favicon.ico HTTP/1.1" 404 3272
+INFO 2023-09-06 20:31:08,336 basehttp 1404 10236 "GET /hw HTTP/1.1" 301 0
+INFO 2023-09-06 20:31:08,339 basehttp 1404 7512 "GET /hw/ HTTP/1.1" 200 2710
+INFO 2023-09-06 20:31:10,095 basehttp 1404 7512 "GET /hw3 HTTP/1.1" 301 0
+INFO 2023-09-06 20:31:10,097 basehttp 1404 3588 "GET /hw3/ HTTP/1.1" 200 1665
+INFO 2023-09-06 20:31:42,374 basehttp 1404 3588 "GET /hw3/clients HTTP/1.1" 301 0
+INFO 2023-09-06 20:31:42,378 basehttp 1404 9512 "GET /hw3/clients/ HTTP/1.1" 200 0
+INFO 2023-09-06 20:46:25,925 autoreload 7196 14512 Watching for file changes with StatReloader
+INFO 2023-09-06 20:46:28,620 basehttp 7196 9756 "GET /hw3/clients/ HTTP/1.1" 200 421
+INFO 2023-09-06 20:46:42,674 basehttp 7196 9756 "GET /hw3/orders HTTP/1.1" 301 0
+INFO 2023-09-06 20:46:42,909 basehttp 7196 2800 "GET /hw3/orders/ HTTP/1.1" 200 38833
+INFO 2023-09-06 20:46:56,652 basehttp 7196 2800 "GET /hw3/products/ HTTP/1.1" 200 1884
+INFO 2023-09-07 08:41:35,132 autoreload 4148 10076 Watching for file changes with StatReloader
+INFO 2023-09-07 08:43:50,532 autoreload 1204 10300 Watching for file changes with StatReloader
+INFO 2023-09-07 08:54:12,184 autoreload 12180 9420 Watching for file changes with StatReloader
+INFO 2023-09-07 08:54:24,784 autoreload 12180 9420 C:\PY\django\myproject\s3app\urls.py changed, reloading.
+INFO 2023-09-07 08:54:25,667 autoreload 260 11564 Watching for file changes with StatReloader
+INFO 2023-09-07 08:54:30,145 autoreload 12312 12456 Watching for file changes with StatReloader
+INFO 2023-09-07 08:54:46,731 autoreload 12312 12456 C:\PY\django\myproject\s3app\views.py changed, reloading.
+INFO 2023-09-07 08:54:50,507 autoreload 3580 2484 Watching for file changes with StatReloader
+INFO 2023-09-07 08:56:21,731 autoreload 3580 2484 C:\PY\django\myproject\my_project\settings.py changed, reloading.
+INFO 2023-09-07 08:56:22,718 autoreload 10676 9920 Watching for file changes with StatReloader
+INFO 2023-09-07 08:56:30,487 autoreload 8040 8272 Watching for file changes with StatReloader
+INFO 2023-09-07 08:56:34,665 basehttp 8040 12996 "GET / HTTP/1.1" 200 13
+WARNING 2023-09-07 08:56:35,373 log 8040 12996 Not Found: /favicon.ico
+WARNING 2023-09-07 08:56:35,373 basehttp 8040 12996 "GET /favicon.ico HTTP/1.1" 404 3272
+INFO 2023-09-07 08:56:50,256 basehttp 8040 12996 "GET /s3 HTTP/1.1" 301 0
+ERROR 2023-09-07 08:56:50,645 log 8040 6188 Internal Server Error: /s3/
+Traceback (most recent call last):
+  File "C:\PY\django\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PY\django\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PY\django\myproject\s3app\views.py", line 16, in index
+    return render(request,
+           ^^^^^^^^^^^^^^^
+  File "C:\PY\django\venv\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PY\django\venv\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PY\django\venv\Lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: seminar_app/index.html
+ERROR 2023-09-07 08:56:50,650 basehttp 8040 6188 "GET /s3/ HTTP/1.1" 500 81215
+ERROR 2023-09-07 08:57:54,015 log 8040 6188 Internal Server Error: /s3/
+Traceback (most recent call last):
+  File "C:\PY\django\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PY\django\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PY\django\myproject\s3app\views.py", line 16, in index
+    return render(request,
+           ^^^^^^^^^^^^^^^
+  File "C:\PY\django\venv\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PY\django\venv\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PY\django\venv\Lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: seminar_app/index.html
+ERROR 2023-09-07 08:57:54,018 basehttp 8040 6188 "GET /s3/ HTTP/1.1" 500 81352
+INFO 2023-09-07 08:57:54,152 autoreload 8040 8272 C:\PY\django\myproject\s3app\urls.py changed, reloading.
+INFO 2023-09-07 08:57:55,019 autoreload 7340 6828 Watching for file changes with StatReloader
+ERROR 2023-09-07 08:59:25,445 log 7340 10964 Internal Server Error: /s3/
+Traceback (most recent call last):
+  File "C:\PY\django\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PY\django\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PY\django\myproject\s3app\views.py", line 16, in index
+    return render(request,
+           ^^^^^^^^^^^^^^^
+  File "C:\PY\django\venv\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PY\django\venv\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PY\django\venv\Lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: seminar_app/index.html
+ERROR 2023-09-07 08:59:25,450 basehttp 7340 10964 "GET /s3/ HTTP/1.1" 500 81346
+INFO 2023-09-07 08:59:26,348 autoreload 7340 6828 C:\PY\django\myproject\s3app\views.py changed, reloading.
+INFO 2023-09-07 08:59:27,227 autoreload 12464 2724 Watching for file changes with StatReloader
+INFO 2023-09-07 08:59:33,590 basehttp 12464 8248 "GET /s3/ HTTP/1.1" 200 405
+INFO 2023-09-07 08:59:40,109 basehttp 12464 8248 "GET /s3/about HTTP/1.1" 301 0
+ERROR 2023-09-07 08:59:40,259 log 12464 12012 Internal Server Error: /s3/about/
+Traceback (most recent call last):
+  File "C:\PY\django\venv\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PY\django\venv\Lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PY\django\venv\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PY\django\venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PY\django\venv\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PY\django\venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\PY\django\venv\Lib\site-packages\django\template\loader_tags.py", line 132, in render
+    compiled_parent = self.get_parent(context)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PY\django\venv\Lib\site-packages\django\template\loader_tags.py", line 129, in get_parent
+    return self.find_template(parent, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PY\django\venv\Lib\site-packages\django\template\loader_tags.py", line 107, in find_template
+    template, origin = context.template.engine.find_template(
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PY\django\venv\Lib\site-packages\django\template\engine.py", line 161, in find_template
+    raise TemplateDoesNotExist(name, tried=tried)
+django.template.exceptions.TemplateDoesNotExist: s3/base.html
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\PY\django\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PY\django\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PY\django\myproject\s3app\views.py", line 27, in about
+    return render(request,
+           ^^^^^^^^^^^^^^^
+  File "C:\PY\django\venv\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PY\django\venv\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PY\django\venv\Lib\site-packages\django\template\backends\django.py", line 63, in render
+    reraise(exc, self.backend)
+  File "C:\PY\django\venv\Lib\site-packages\django\template\backends\django.py", line 84, in reraise
+    raise new from exc
+django.template.exceptions.TemplateDoesNotExist: s3/base.html
+ERROR 2023-09-07 08:59:40,268 basehttp 12464 12012 "GET /s3/about/ HTTP/1.1" 500 130994
+INFO 2023-09-07 09:00:32,333 autoreload 6772 12064 Watching for file changes with StatReloader
+INFO 2023-09-07 09:00:35,099 basehttp 6772 10068 "GET /s3/about/ HTTP/1.1" 200 400
+INFO 2023-09-07 09:01:02,082 basehttp 6772 10068 "GET /s3/heads_game/5 HTTP/1.1" 200 537
+INFO 2023-09-07 09:01:18,021 basehttp 6772 10068 "GET /s3/dice_game/6 HTTP/1.1" 200 515
+INFO 2023-09-07 09:01:35,826 autoreload 6772 12064 C:\PY\django\myproject\s3app\views.py changed, reloading.
+INFO 2023-09-07 09:01:36,698 autoreload 2008 11800 Watching for file changes with StatReloader
+INFO 2023-09-07 09:01:40,449 basehttp 2008 9776 "GET /s3/dice_game/6 HTTP/1.1" 200 515
+INFO 2023-09-07 09:01:42,797 basehttp 2008 9776 "GET /s3/dice_game/6 HTTP/1.1" 200 515
+INFO 2023-09-07 09:01:43,400 basehttp 2008 9776 "GET /s3/dice_game/6 HTTP/1.1" 200 515
+INFO 2023-09-07 09:01:43,908 basehttp 2008 9776 "GET /s3/dice_game/6 HTTP/1.1" 200 515
+INFO 2023-09-07 09:03:03,295 autoreload 13164 12304 Watching for file changes with StatReloader
+WARNING 2023-09-07 09:03:09,338 log 13164 5832 Not Found: /s4
+WARNING 2023-09-07 09:03:09,339 basehttp 13164 5832 "GET /s4 HTTP/1.1" 404 3245
+WARNING 2023-09-07 09:03:24,617 log 13164 12672 Not Found: /hw4
+WARNING 2023-09-07 09:03:24,619 basehttp 13164 12672 "GET /hw4 HTTP/1.1" 404 3248
+INFO 2023-09-07 09:03:40,065 basehttp 13164 392 "GET /hw3 HTTP/1.1" 301 0
+ERROR 2023-09-07 09:03:40,145 log 13164 1032 Internal Server Error: /hw3/
+Traceback (most recent call last):
+  File "C:\PY\django\venv\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PY\django\venv\Lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PY\django\venv\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PY\django\venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PY\django\venv\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PY\django\venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\PY\django\venv\Lib\site-packages\django\template\loader_tags.py", line 132, in render
+    compiled_parent = self.get_parent(context)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PY\django\venv\Lib\site-packages\django\template\loader_tags.py", line 129, in get_parent
+    return self.find_template(parent, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PY\django\venv\Lib\site-packages\django\template\loader_tags.py", line 107, in find_template
+    template, origin = context.template.engine.find_template(
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PY\django\venv\Lib\site-packages\django\template\engine.py", line 161, in find_template
+    raise TemplateDoesNotExist(name, tried=tried)
+django.template.exceptions.TemplateDoesNotExist: seminar_app/base.html
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\PY\django\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PY\django\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PY\django\myproject\hw_3_app\views.py", line 26, in index
+    return render(request,
+           ^^^^^^^^^^^^^^^
+  File "C:\PY\django\venv\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PY\django\venv\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PY\django\venv\Lib\site-packages\django\template\backends\django.py", line 63, in render
+    reraise(exc, self.backend)
+  File "C:\PY\django\venv\Lib\site-packages\django\template\backends\django.py", line 84, in reraise
+    raise new from exc
+django.template.exceptions.TemplateDoesNotExist: seminar_app/base.html
+ERROR 2023-09-07 09:03:40,154 basehttp 13164 1032 "GET /hw3/ HTTP/1.1" 500 141706
+INFO 2023-09-07 09:04:26,691 basehttp 13164 4148 "GET /hw3/ HTTP/1.1" 200 1110
+INFO 2023-09-07 09:06:31,467 basehttp 13164 4148 "GET /hw3/ HTTP/1.1" 200 1110
+INFO 2023-09-07 09:06:31,517 autoreload 13164 12304 C:\PY\django\myproject\hw_3_app\views.py changed, reloading.
+INFO 2023-09-07 09:06:32,483 autoreload 10228 10768 Watching for file changes with StatReloader
+INFO 2023-09-07 09:06:34,156 basehttp 10228 7844 "GET /hw3/ HTTP/1.1" 200 1098
+INFO 2023-09-07 09:07:12,424 basehttp 10228 11792 "GET /hw3/ HTTP/1.1" 200 1098
+INFO 2023-09-07 09:07:13,100 autoreload 10228 10768 C:\PY\django\myproject\hw_3_app\views.py changed, reloading.
+INFO 2023-09-07 09:07:13,982 autoreload 12732 11360 Watching for file changes with StatReloader
+INFO 2023-09-07 09:07:16,144 basehttp 12732 11544 "GET /hw3/ HTTP/1.1" 200 1226
+INFO 2023-09-07 09:08:09,782 basehttp 12732 9468 "GET /hw3/ HTTP/1.1" 200 1226
+INFO 2023-09-07 09:08:10,623 autoreload 12732 11360 C:\PY\django\myproject\hw_3_app\views.py changed, reloading.
+INFO 2023-09-07 09:08:11,506 autoreload 12180 2816 Watching for file changes with StatReloader
+INFO 2023-09-07 09:08:12,002 basehttp 12180 1032 "GET /hw3/ HTTP/1.1" 200 1162
+INFO 2023-09-07 09:10:32,674 basehttp 12180 1032 "GET /hw3/ HTTP/1.1" 200 1162
+INFO 2023-09-07 09:10:33,446 autoreload 12180 2816 C:\PY\django\myproject\hw_3_app\views.py changed, reloading.
+INFO 2023-09-07 09:10:34,400 autoreload 3888 13164 Watching for file changes with StatReloader
+INFO 2023-09-07 09:10:40,750 basehttp 3888 10708 "GET /hw3/ HTTP/1.1" 200 1021
+INFO 2023-09-07 09:11:07,133 basehttp 3888 10708 "GET /hw3/about HTTP/1.1" 301 0
+INFO 2023-09-07 09:11:07,171 basehttp 3888 10000 "GET /hw3/about/ HTTP/1.1" 200 374
+INFO 2023-09-07 09:11:24,803 basehttp 3888 10000 "GET /hw3/clients/ HTTP/1.1" 200 421
+INFO 2023-09-07 09:11:45,129 basehttp 3888 10000 "GET /hw3/products/ HTTP/1.1" 200 1884
+INFO 2023-09-07 09:12:01,952 basehttp 3888 10000 "GET /hw3/orders/ HTTP/1.1" 200 38833
+INFO 2023-09-07 09:13:30,635 autoreload 3888 13164 C:\PY\django\myproject\hw_3_app\views.py changed, reloading.
+INFO 2023-09-07 09:13:31,705 autoreload 13104 8340 Watching for file changes with StatReloader
+INFO 2023-09-07 09:14:56,011 autoreload 13104 8340 C:\PY\django\myproject\hw_3_app\views.py changed, reloading.
+INFO 2023-09-07 09:14:56,975 autoreload 12812 7548 Watching for file changes with StatReloader
+INFO 2023-09-07 09:18:12,307 autoreload 12812 7548 C:\PY\django\myproject\hw_3_app\views.py changed, reloading.
+INFO 2023-09-07 09:18:13,183 autoreload 10036 10672 Watching for file changes with StatReloader
+INFO 2023-09-07 09:18:29,320 autoreload 10036 10672 C:\PY\django\myproject\hw_3_app\views.py changed, reloading.
+INFO 2023-09-07 09:18:30,242 autoreload 3880 11380 Watching for file changes with StatReloader
+INFO 2023-09-07 09:24:45,477 autoreload 3880 11380 C:\PY\django\myproject\hw_3_app\views.py changed, reloading.
+INFO 2023-09-07 09:24:46,559 autoreload 10016 11780 Watching for file changes with StatReloader
+INFO 2023-09-07 09:26:01,312 autoreload 10016 11780 C:\PY\django\myproject\hw_3_app\views.py changed, reloading.
+INFO 2023-09-07 09:26:02,214 autoreload 11420 8048 Watching for file changes with StatReloader
+INFO 2023-09-07 09:26:48,026 autoreload 11420 8048 C:\PY\django\myproject\hw_3_app\views.py changed, reloading.
+INFO 2023-09-07 09:26:49,269 autoreload 8 8456 Watching for file changes with StatReloader
+INFO 2023-09-07 09:36:04,434 autoreload 8 8456 C:\PY\django\myproject\hw_3_app\views.py changed, reloading.
+INFO 2023-09-07 09:36:05,349 autoreload 10052 7116 Watching for file changes with StatReloader
+ERROR 2023-09-07 09:36:19,510 log 10052 4780 Internal Server Error: /hw3/product_orders/
+Traceback (most recent call last):
+  File "C:\PY\django\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PY\django\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PY\django\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PY\django\venv\Lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PY\django\venv\Lib\site-packages\django\views\generic\list.py", line 174, in get
+    context = self.get_context_data()
+              ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PY\django\myproject\hw_3_app\views.py", line 64, in get_context_data
+    client = Client.objects.get(pk=self.kwargs['pk'])
+                                   ~~~~~~~~~~~^^^^^^
+KeyError: 'pk'
+ERROR 2023-09-07 09:36:19,515 basehttp 10052 4780 "GET /hw3/product_orders/ HTTP/1.1" 500 83358
+WARNING 2023-09-07 09:42:10,296 log 10052 10944 Not Found: /hw3/product_orders/2
+WARNING 2023-09-07 09:42:10,297 basehttp 10052 10944 "GET /hw3/product_orders/2 HTTP/1.1" 404 4246
+INFO 2023-09-07 09:43:30,060 autoreload 10052 7116 C:\PY\django\myproject\hw_3_app\urls.py changed, reloading.
+INFO 2023-09-07 09:43:31,327 autoreload 11520 13148 Watching for file changes with StatReloader
+INFO 2023-09-07 09:43:34,794 basehttp 11520 11708 "GET /hw3/product_orders/2 HTTP/1.1" 200 471
+INFO 2023-09-07 09:43:44,466 basehttp 11520 8388 "GET /hw3/product_orders/3 HTTP/1.1" 200 471
+INFO 2023-09-07 09:43:50,297 basehttp 11520 10672 "GET /hw3/product_orders/5 HTTP/1.1" 200 471
+INFO 2023-09-07 09:56:03,187 basehttp 11520 10096 "GET /hw3/product_orders/3 HTTP/1.1" 200 471
+INFO 2023-09-07 09:57:16,054 basehttp 11520 9140 "GET /hw3/product_orders/6 HTTP/1.1" 200 471
+INFO 2023-09-07 09:57:21,597 basehttp 11520 8616 "GET /hw3/product_orders/10 HTTP/1.1" 200 473
+ERROR 2023-09-07 09:57:29,190 log 11520 3732 Internal Server Error: /hw3/product_orders/20
+Traceback (most recent call last):
+  File "C:\PY\django\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PY\django\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PY\django\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PY\django\venv\Lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PY\django\venv\Lib\site-packages\django\views\generic\list.py", line 174, in get
+    context = self.get_context_data()
+              ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PY\django\myproject\hw_3_app\views.py", line 64, in get_context_data
+    client = Client.objects.get(pk=self.kwargs['pk'])
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PY\django\venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PY\django\venv\Lib\site-packages\django\db\models\query.py", line 637, in get
+    raise self.model.DoesNotExist(
+hw_3_app.models.Client.DoesNotExist: Client matching query does not exist.
+ERROR 2023-09-07 09:57:29,196 basehttp 11520 3732 "GET /hw3/product_orders/20 HTTP/1.1" 500 92715
+INFO 2023-09-07 09:58:17,795 basehttp 11520 1476 "GET /hw3/product_orders/5 HTTP/1.1" 200 471
+INFO 2023-09-07 09:59:21,158 basehttp 11520 10548 "GET /hw3/product_orders/5 HTTP/1.1" 200 471
+INFO 2023-09-07 09:59:22,949 basehttp 11520 10548 "GET /hw3/product_orders/5 HTTP/1.1" 200 471
+INFO 2023-09-07 10:01:10,440 basehttp 11520 11516 "GET /hw3/product_orders/5 HTTP/1.1" 200 471
+INFO 2023-09-07 10:01:12,405 basehttp 11520 11516 "GET /hw3/product_orders/5 HTTP/1.1" 200 471
+ERROR 2023-09-07 10:03:55,067 log 11520 12012 Internal Server Error: /hw3/product_orders/5
+Traceback (most recent call last):
+  File "C:\PY\django\venv\Lib\site-packages\django\template\base.py", line 505, in parse
+    compile_func = self.tags[command]
+                   ~~~~~~~~~^^^^^^^^^
+KeyError: 'endif'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\PY\django\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PY\django\venv\Lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "C:\PY\django\venv\Lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PY\django\venv\Lib\site-packages\django\template\response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PY\django\venv\Lib\site-packages\django\template\response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PY\django\venv\Lib\site-packages\django\template\loader.py", line 42, in select_template
+    return engine.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PY\django\venv\Lib\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PY\django\venv\Lib\site-packages\django\template\engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PY\django\venv\Lib\site-packages\django\template\engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PY\django\venv\Lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PY\django\venv\Lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "C:\PY\django\venv\Lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PY\django\venv\Lib\site-packages\django\template\base.py", line 200, in compile_nodelist
+    return parser.parse()
+           ^^^^^^^^^^^^^^
+  File "C:\PY\django\venv\Lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\PY\django\venv\Lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PY\django\venv\Lib\site-packages\django\template\loader_tags.py", line 293, in do_extends
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "C:\PY\django\venv\Lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\PY\django\venv\Lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PY\django\venv\Lib\site-packages\django\template\loader_tags.py", line 232, in do_block
+    nodelist = parser.parse(("endblock",))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PY\django\venv\Lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\PY\django\venv\Lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PY\django\venv\Lib\site-packages\django\template\defaulttags.py", line 853, in do_for
+    nodelist_loop = parser.parse(
+                    ^^^^^^^^^^^^^
+  File "C:\PY\django\venv\Lib\site-packages\django\template\base.py", line 507, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "C:\PY\django\venv\Lib\site-packages\django\template\base.py", line 558, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 11: 'endif', expected 'empty' or 'endfor'. Did you forget to register or load this tag?
+ERROR 2023-09-07 10:03:55,079 basehttp 11520 12012 "GET /hw3/product_orders/5 HTTP/1.1" 500 181324
+INFO 2023-09-08 17:07:28,849 autoreload 8328 140395072864256 Watching for file changes with StatReloader
+INFO 2023-09-08 17:07:58,542 basehttp 8328 140395020285504 "GET /hw3/products HTTP/1.1" 301 0
+INFO 2023-09-08 17:07:58,550 basehttp 8328 140395010844224 "GET /hw3/products/ HTTP/1.1" 200 1884
+INFO 2023-09-08 17:08:58,885 autoreload 8328 140395072864256 /home/alevtin/GB/Flask/django/myproject/hw_3_app/models.py changed, reloading.
+INFO 2023-09-08 17:08:59,470 autoreload 8381 140577258311680 Watching for file changes with StatReloader
+INFO 2023-09-08 17:51:20,044 autoreload 9260 139827875176448 Watching for file changes with StatReloader
+INFO 2023-09-08 17:51:45,472 autoreload 9260 139827875176448 /home/alevtin/GB/Flask/django/myproject/my_project/settings.py changed, reloading.
+INFO 2023-09-08 17:51:46,218 autoreload 9278 139914608586752 Watching for file changes with StatReloader
+INFO 2023-09-08 17:51:50,024 basehttp 9278 139914555422272 "GET / HTTP/1.1" 200 13
+INFO 2023-09-08 17:52:02,884 basehttp 9278 139914555422272 "GET /hw3 HTTP/1.1" 301 0
+INFO 2023-09-08 17:52:02,897 basehttp 9278 139914547029568 "GET /hw3/ HTTP/1.1" 200 1021
+INFO 2023-09-08 17:52:33,917 basehttp 9278 139914547029568 "GET /hw3/product_orders/10 HTTP/1.1" 200 369
+INFO 2023-09-08 17:52:40,223 basehttp 9278 139914547029568 "GET /hw3/product_orders/5 HTTP/1.1" 200 369
+INFO 2023-09-08 17:53:38,003 basehttp 9278 139914547029568 "GET /hw3/product_orders/5 HTTP/1.1" 200 369
+WARNING 2023-09-08 17:53:48,020 log 9278 139914547029568 Not Found: /hw3/product_orders/
+WARNING 2023-09-08 17:53:48,020 basehttp 9278 139914547029568 "GET /hw3/product_orders/ HTTP/1.1" 404 4257
+INFO 2023-09-08 17:53:53,628 basehttp 9278 139914547029568 "GET /hw3/product_orders/5 HTTP/1.1" 200 369

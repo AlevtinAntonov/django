@@ -23,6 +23,9 @@ urlpatterns = [
     path('les3/', include('myapp3.urls')),
     path('les4/', include('myapp4.urls')),
     path('hw/', include('hw_1_app.urls')),
+    path('hw2/', include('hw_2_app.urls')),
+    path('hw3/', include('hw_3_app.urls')),
     path('s1/', include('s1app.urls')),
     path('s2/', include('s2app.urls')),
+    path('s3/', include('s3app.urls')),
 ]
