@@ -1379,3 +1379,442 @@ django.template.exceptions.TemplateDoesNotExist: seminar_app/article_page.html
 ERROR 2023-09-09 08:11:32,912 basehttp 7083 139844150883904 "GET /s4/article/1 HTTP/1.1" 500 85503
 INFO 2023-09-09 08:13:41,129 autoreload 7083 139844203606016 /home/alevtin/GB/Flask/django/myproject/seminar_app/views.py changed, reloading.
 INFO 2023-09-09 08:13:41,721 autoreload 7864 140486345711616 Watching for file changes with StatReloader
+INFO 2023-09-09 08:37:34,608 autoreload 8576 140240350871552 Watching for file changes with StatReloader
+INFO 2023-09-09 08:37:38,720 basehttp 8576 140240296605248 "GET / HTTP/1.1" 200 13
+INFO 2023-09-09 08:37:47,977 basehttp 8576 140240296605248 "GET /hw4 HTTP/1.1" 301 0
+INFO 2023-09-09 08:37:47,984 basehttp 8576 140240288212544 "GET /hw4/ HTTP/1.1" 200 41
+INFO 2023-09-09 08:38:20,393 basehttp 8576 140240288212544 "GET /hw4/about/ HTTP/1.1" 200 40
+WARNING 2023-09-09 08:38:33,892 log 8576 140240288212544 Not Found: /hw4/about/customer/1
+WARNING 2023-09-09 08:38:33,892 basehttp 8576 140240288212544 "GET /hw4/about/customer/1 HTTP/1.1" 404 5024
+WARNING 2023-09-09 08:39:20,545 log 8576 140240288212544 Not Found: /hw4/about/customer/
+WARNING 2023-09-09 08:39:20,548 basehttp 8576 140240288212544 "GET /hw4/about/customer/ HTTP/1.1" 404 5021
+INFO 2023-09-09 08:39:46,408 basehttp 8576 140240288212544 "GET /hw4/customer/1 HTTP/1.1" 301 0
+ERROR 2023-09-09 08:39:46,534 log 8576 140240296605248 Internal Server Error: /hw4/customer/1/
+Traceback (most recent call last):
+  File "/home/alevtin/GB/Flask/django/venv/lib/python3.10/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/alevtin/GB/Flask/django/venv/lib/python3.10/site-packages/django/db/backends/sqlite3/base.py", line 328, in execute
+    return super().execute(query, params)
+sqlite3.OperationalError: no such table: hw_4_app_customer
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/alevtin/GB/Flask/django/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/alevtin/GB/Flask/django/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/alevtin/GB/Flask/django/venv/lib/python3.10/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/alevtin/GB/Flask/django/venv/lib/python3.10/site-packages/django/views/generic/base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/alevtin/GB/Flask/django/venv/lib/python3.10/site-packages/django/views/generic/detail.py", line 108, in get
+    self.object = self.get_object()
+  File "/home/alevtin/GB/Flask/django/venv/lib/python3.10/site-packages/django/views/generic/detail.py", line 53, in get_object
+    obj = queryset.get()
+  File "/home/alevtin/GB/Flask/django/venv/lib/python3.10/site-packages/django/db/models/query.py", line 633, in get
+    num = len(clone)
+  File "/home/alevtin/GB/Flask/django/venv/lib/python3.10/site-packages/django/db/models/query.py", line 380, in __len__
+    self._fetch_all()
+  File "/home/alevtin/GB/Flask/django/venv/lib/python3.10/site-packages/django/db/models/query.py", line 1881, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/home/alevtin/GB/Flask/django/venv/lib/python3.10/site-packages/django/db/models/query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+  File "/home/alevtin/GB/Flask/django/venv/lib/python3.10/site-packages/django/db/models/sql/compiler.py", line 1562, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/alevtin/GB/Flask/django/venv/lib/python3.10/site-packages/django/db/backends/utils.py", line 102, in execute
+    return super().execute(sql, params)
+  File "/home/alevtin/GB/Flask/django/venv/lib/python3.10/site-packages/django/db/backends/utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "/home/alevtin/GB/Flask/django/venv/lib/python3.10/site-packages/django/db/backends/utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/home/alevtin/GB/Flask/django/venv/lib/python3.10/site-packages/django/db/backends/utils.py", line 84, in _execute
+    with self.db.wrap_database_errors:
+  File "/home/alevtin/GB/Flask/django/venv/lib/python3.10/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/alevtin/GB/Flask/django/venv/lib/python3.10/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/alevtin/GB/Flask/django/venv/lib/python3.10/site-packages/django/db/backends/sqlite3/base.py", line 328, in execute
+    return super().execute(query, params)
+django.db.utils.OperationalError: no such table: hw_4_app_customer
+ERROR 2023-09-09 08:39:46,542 basehttp 8576 140240296605248 "GET /hw4/customer/1/ HTTP/1.1" 500 150137
+INFO 2023-09-09 08:49:56,637 autoreload 9256 140127349612544 Watching for file changes with StatReloader
+INFO 2023-09-09 08:50:21,205 basehttp 9256 140127295764032 "GET /hw4/ HTTP/1.1" 200 41
+INFO 2023-09-09 08:50:41,653 basehttp 9256 140127295764032 "GET /hw4/customer/2 HTTP/1.1" 301 0
+ERROR 2023-09-09 08:50:41,737 log 9256 140127287371328 Internal Server Error: /hw4/customer/2/
+Traceback (most recent call last):
+  File "/home/alevtin/GB/Flask/django/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/alevtin/GB/Flask/django/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+  File "/home/alevtin/GB/Flask/django/venv/lib/python3.10/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+  File "/home/alevtin/GB/Flask/django/venv/lib/python3.10/site-packages/django/template/response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "/home/alevtin/GB/Flask/django/venv/lib/python3.10/site-packages/django/template/response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+  File "/home/alevtin/GB/Flask/django/venv/lib/python3.10/site-packages/django/template/loader.py", line 47, in select_template
+    raise TemplateDoesNotExist(", ".join(template_name_list), chain=chain)
+django.template.exceptions.TemplateDoesNotExist: hw_app/customer_page.html
+ERROR 2023-09-09 08:50:41,743 basehttp 9256 140127287371328 "GET /hw4/customer/2/ HTTP/1.1" 500 85563
+WARNING 2023-09-09 08:51:07,463 log 9256 140127287371328 Not Found: /hw4/product/
+WARNING 2023-09-09 08:51:07,464 basehttp 9256 140127287371328 "GET /hw4/product/ HTTP/1.1" 404 5000
+INFO 2023-09-09 08:51:12,995 basehttp 9256 140127287371328 "GET /hw4/product/1 HTTP/1.1" 301 0
+ERROR 2023-09-09 08:51:13,068 log 9256 140127295764032 Internal Server Error: /hw4/product/1/
+Traceback (most recent call last):
+  File "/home/alevtin/GB/Flask/django/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/alevtin/GB/Flask/django/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+  File "/home/alevtin/GB/Flask/django/venv/lib/python3.10/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+  File "/home/alevtin/GB/Flask/django/venv/lib/python3.10/site-packages/django/template/response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "/home/alevtin/GB/Flask/django/venv/lib/python3.10/site-packages/django/template/response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+  File "/home/alevtin/GB/Flask/django/venv/lib/python3.10/site-packages/django/template/loader.py", line 47, in select_template
+    raise TemplateDoesNotExist(", ".join(template_name_list), chain=chain)
+django.template.exceptions.TemplateDoesNotExist: hw_app/product_page.html
+ERROR 2023-09-09 08:51:13,072 basehttp 9256 140127295764032 "GET /hw4/product/1/ HTTP/1.1" 500 85527
+ERROR 2023-09-09 08:54:41,094 log 9256 140127295764032 Internal Server Error: /hw4/product/1/
+Traceback (most recent call last):
+  File "/home/alevtin/GB/Flask/django/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/alevtin/GB/Flask/django/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+  File "/home/alevtin/GB/Flask/django/venv/lib/python3.10/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+  File "/home/alevtin/GB/Flask/django/venv/lib/python3.10/site-packages/django/template/response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "/home/alevtin/GB/Flask/django/venv/lib/python3.10/site-packages/django/template/response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+  File "/home/alevtin/GB/Flask/django/venv/lib/python3.10/site-packages/django/template/loader.py", line 47, in select_template
+    raise TemplateDoesNotExist(", ".join(template_name_list), chain=chain)
+django.template.exceptions.TemplateDoesNotExist: hw_app/product_page.html
+ERROR 2023-09-09 08:54:41,097 basehttp 9256 140127295764032 "GET /hw4/product/1/ HTTP/1.1" 500 85664
+INFO 2023-09-09 08:56:13,723 basehttp 9256 140127295764032 "GET /hw4/ HTTP/1.1" 200 41
+INFO 2023-09-09 08:56:19,499 basehttp 9256 140127295764032 "GET /hw4/about HTTP/1.1" 301 0
+INFO 2023-09-09 08:56:19,508 basehttp 9256 140127287371328 "GET /hw4/about/ HTTP/1.1" 200 40
+INFO 2023-09-09 08:59:22,952 basehttp 9256 140127287371328 "GET /hw4/update_product/2 HTTP/1.1" 301 0
+ERROR 2023-09-09 08:59:23,019 log 9256 140127295764032 Internal Server Error: /hw4/update_product/2/
+Traceback (most recent call last):
+  File "/home/alevtin/GB/Flask/django/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/alevtin/GB/Flask/django/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+  File "/home/alevtin/GB/Flask/django/venv/lib/python3.10/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+  File "/home/alevtin/GB/Flask/django/venv/lib/python3.10/site-packages/django/template/response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "/home/alevtin/GB/Flask/django/venv/lib/python3.10/site-packages/django/template/response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+  File "/home/alevtin/GB/Flask/django/venv/lib/python3.10/site-packages/django/template/loader.py", line 47, in select_template
+    raise TemplateDoesNotExist(", ".join(template_name_list), chain=chain)
+django.template.exceptions.TemplateDoesNotExist: hw_app/update_product.html
+ERROR 2023-09-09 08:59:23,026 basehttp 9256 140127295764032 "GET /hw4/update_product/2/ HTTP/1.1" 500 85648
+ERROR 2023-09-09 09:01:27,500 log 9256 140127295764032 Internal Server Error: /hw4/update_product/2/
+Traceback (most recent call last):
+  File "/home/alevtin/GB/Flask/django/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/alevtin/GB/Flask/django/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+  File "/home/alevtin/GB/Flask/django/venv/lib/python3.10/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+  File "/home/alevtin/GB/Flask/django/venv/lib/python3.10/site-packages/django/template/response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "/home/alevtin/GB/Flask/django/venv/lib/python3.10/site-packages/django/template/response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+  File "/home/alevtin/GB/Flask/django/venv/lib/python3.10/site-packages/django/template/loader.py", line 47, in select_template
+    raise TemplateDoesNotExist(", ".join(template_name_list), chain=chain)
+django.template.exceptions.TemplateDoesNotExist: hw_app/update_product.html
+ERROR 2023-09-09 09:01:27,501 basehttp 9256 140127295764032 "GET /hw4/update_product/2/ HTTP/1.1" 500 85785
+INFO 2023-09-09 09:01:28,224 autoreload 9256 140127349612544 /home/alevtin/GB/Flask/django/myproject/hw_4_app/views.py changed, reloading.
+INFO 2023-09-09 09:01:28,860 autoreload 9395 140592455360512 Watching for file changes with StatReloader
+INFO 2023-09-09 09:01:39,446 autoreload 9395 140592455360512 /home/alevtin/GB/Flask/django/myproject/hw_4_app/views.py changed, reloading.
+INFO 2023-09-09 09:01:40,167 autoreload 9400 139747282415616 Watching for file changes with StatReloader
+ERROR 2023-09-09 09:01:42,539 log 9400 139747158652480 Internal Server Error: /hw4/update_product/2/
+Traceback (most recent call last):
+  File "/home/alevtin/GB/Flask/django/venv/lib/python3.10/site-packages/django/urls/base.py", line 71, in reverse
+    extra, resolver = resolver.namespace_dict[ns]
+KeyError: 'hw_4_app'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/alevtin/GB/Flask/django/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/alevtin/GB/Flask/django/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+  File "/home/alevtin/GB/Flask/django/venv/lib/python3.10/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+  File "/home/alevtin/GB/Flask/django/venv/lib/python3.10/site-packages/django/template/response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+  File "/home/alevtin/GB/Flask/django/venv/lib/python3.10/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/alevtin/GB/Flask/django/venv/lib/python3.10/site-packages/django/template/base.py", line 175, in render
+    return self._render(context)
+  File "/home/alevtin/GB/Flask/django/venv/lib/python3.10/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/alevtin/GB/Flask/django/venv/lib/python3.10/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/alevtin/GB/Flask/django/venv/lib/python3.10/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/alevtin/GB/Flask/django/venv/lib/python3.10/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/home/alevtin/GB/Flask/django/venv/lib/python3.10/site-packages/django/template/loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "/home/alevtin/GB/Flask/django/venv/lib/python3.10/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/alevtin/GB/Flask/django/venv/lib/python3.10/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/alevtin/GB/Flask/django/venv/lib/python3.10/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/alevtin/GB/Flask/django/venv/lib/python3.10/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/home/alevtin/GB/Flask/django/venv/lib/python3.10/site-packages/django/template/loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "/home/alevtin/GB/Flask/django/venv/lib/python3.10/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/alevtin/GB/Flask/django/venv/lib/python3.10/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/alevtin/GB/Flask/django/venv/lib/python3.10/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/home/alevtin/GB/Flask/django/venv/lib/python3.10/site-packages/django/template/defaulttags.py", line 471, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/home/alevtin/GB/Flask/django/venv/lib/python3.10/site-packages/django/urls/base.py", line 82, in reverse
+    raise NoReverseMatch("%s is not a registered namespace" % key)
+django.urls.exceptions.NoReverseMatch: 'hw_4_app' is not a registered namespace
+ERROR 2023-09-09 09:01:42,544 basehttp 9400 139747158652480 "GET /hw4/update_product/2/ HTTP/1.1" 500 164366
+INFO 2023-09-09 09:04:41,407 autoreload 9400 139747282415616 /home/alevtin/GB/Flask/django/myproject/hw_4_app/urls.py changed, reloading.
+INFO 2023-09-09 09:04:42,222 autoreload 9503 140506044284928 Watching for file changes with StatReloader
+INFO 2023-09-09 09:04:42,593 basehttp 9503 140505991083584 "GET /hw4/update_product/2/ HTTP/1.1" 200 1905
+INFO 2023-09-09 09:04:42,617 basehttp 9503 140505991083584 "GET /static/css/bootstrap.css HTTP/1.1" 304 0
+INFO 2023-09-09 09:09:40,796 basehttp 9503 140505991083584 "GET /hw4/customer/1/ HTTP/1.1" 200 702
+WARNING 2023-09-09 09:09:45,077 log 9503 140505991083584 Not Found: /hw4/orders/year/2023/1/
+WARNING 2023-09-09 09:09:45,078 basehttp 9503 140505991083584 "GET /hw4/orders/year/2023/1/ HTTP/1.1" 404 4301
+WARNING 2023-09-09 09:10:10,804 log 9503 140505991083584 Not Found: /hw4/orders/week/2023/36/1/
+WARNING 2023-09-09 09:10:10,806 basehttp 9503 140505991083584 "GET /hw4/orders/week/2023/36/1/ HTTP/1.1" 404 4783
+INFO 2023-09-09 09:10:40,909 basehttp 9503 140505991083584 "GET /hw4/customer/5 HTTP/1.1" 301 0
+INFO 2023-09-09 09:10:40,920 basehttp 9503 140505982690880 "GET /hw4/customer/5/ HTTP/1.1" 200 702
+ERROR 2023-09-09 09:10:45,325 log 9503 140505982690880 Internal Server Error: /hw4/orders/week/2023/36/5/
+Traceback (most recent call last):
+  File "/home/alevtin/GB/Flask/django/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/alevtin/GB/Flask/django/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+  File "/home/alevtin/GB/Flask/django/venv/lib/python3.10/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+  File "/home/alevtin/GB/Flask/django/venv/lib/python3.10/site-packages/django/template/response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "/home/alevtin/GB/Flask/django/venv/lib/python3.10/site-packages/django/template/response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+  File "/home/alevtin/GB/Flask/django/venv/lib/python3.10/site-packages/django/template/loader.py", line 47, in select_template
+    raise TemplateDoesNotExist(", ".join(template_name_list), chain=chain)
+django.template.exceptions.TemplateDoesNotExist: hw_4_app/all_products.html, hw_4_app/order_archive.html
+ERROR 2023-09-09 09:10:45,333 basehttp 9503 140505982690880 "GET /hw4/orders/week/2023/36/5/ HTTP/1.1" 500 89992
+ERROR 2023-09-09 09:11:27,506 log 9503 140505982690880 Internal Server Error: /hw4/orders/week/2023/36/5/
+Traceback (most recent call last):
+  File "/home/alevtin/GB/Flask/django/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/alevtin/GB/Flask/django/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+  File "/home/alevtin/GB/Flask/django/venv/lib/python3.10/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+  File "/home/alevtin/GB/Flask/django/venv/lib/python3.10/site-packages/django/template/response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "/home/alevtin/GB/Flask/django/venv/lib/python3.10/site-packages/django/template/response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+  File "/home/alevtin/GB/Flask/django/venv/lib/python3.10/site-packages/django/template/loader.py", line 47, in select_template
+    raise TemplateDoesNotExist(", ".join(template_name_list), chain=chain)
+django.template.exceptions.TemplateDoesNotExist: hw_4_app/all_products.html, hw_4_app/order_archive.html
+ERROR 2023-09-09 09:11:27,509 basehttp 9503 140505982690880 "GET /hw4/orders/week/2023/36/5/ HTTP/1.1" 500 89992
+INFO 2023-09-09 09:11:55,976 basehttp 9503 140505982690880 "GET /hw4/product/2 HTTP/1.1" 301 0
+INFO 2023-09-09 09:11:55,994 basehttp 9503 140505982690880 "GET /hw4/product/2/ HTTP/1.1" 200 608
+WARNING 2023-09-09 09:11:56,054 log 9503 140505982690880 Not Found: /media/default.png
+WARNING 2023-09-09 09:11:56,056 basehttp 9503 140505982690880 "GET /media/default.png HTTP/1.1" 404 3497
+INFO 2023-09-09 09:11:58,103 basehttp 9503 140505982690880 "GET /hw4/update_product/2/ HTTP/1.1" 200 1905
+ERROR 2023-09-09 09:12:12,333 log 9503 140505982690880 Internal Server Error: /hw4/update_product/2/
+Traceback (most recent call last):
+  File "/home/alevtin/GB/Flask/django/venv/lib/python3.10/site-packages/django/urls/base.py", line 71, in reverse
+    extra, resolver = resolver.namespace_dict[ns]
+KeyError: 'hw_app'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/alevtin/GB/Flask/django/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/alevtin/GB/Flask/django/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/alevtin/GB/Flask/django/venv/lib/python3.10/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/alevtin/GB/Flask/django/venv/lib/python3.10/site-packages/django/views/generic/base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/alevtin/GB/Flask/django/venv/lib/python3.10/site-packages/django/views/generic/edit.py", line 208, in post
+    return super().post(request, *args, **kwargs)
+  File "/home/alevtin/GB/Flask/django/venv/lib/python3.10/site-packages/django/views/generic/edit.py", line 153, in post
+    return self.form_valid(form)
+  File "/home/alevtin/GB/Flask/django/venv/lib/python3.10/site-packages/django/views/generic/edit.py", line 136, in form_valid
+    return super().form_valid(form)
+  File "/home/alevtin/GB/Flask/django/venv/lib/python3.10/site-packages/django/views/generic/edit.py", line 65, in form_valid
+    return HttpResponseRedirect(self.get_success_url())
+  File "/home/alevtin/GB/Flask/django/venv/lib/python3.10/site-packages/django/views/generic/edit.py", line 125, in get_success_url
+    url = self.object.get_absolute_url()
+  File "/home/alevtin/GB/Flask/django/myproject/hw_4_app/models.py", line 32, in get_absolute_url
+    return reverse('hw_app:product_page', kwargs={'pk': self.pk})
+  File "/home/alevtin/GB/Flask/django/venv/lib/python3.10/site-packages/django/urls/base.py", line 82, in reverse
+    raise NoReverseMatch("%s is not a registered namespace" % key)
+django.urls.exceptions.NoReverseMatch: 'hw_app' is not a registered namespace
+ERROR 2023-09-09 09:12:12,335 basehttp 9503 140505982690880 "POST /hw4/update_product/2/ HTTP/1.1" 500 113534
+INFO 2023-09-09 09:12:54,625 autoreload 9503 140506044284928 /home/alevtin/GB/Flask/django/myproject/hw_4_app/models.py changed, reloading.
+INFO 2023-09-09 09:12:55,561 autoreload 9857 140695833055232 Watching for file changes with StatReloader
+INFO 2023-09-09 09:12:56,164 basehttp 9857 140695780193856 "POST /hw4/update_product/2/ HTTP/1.1" 302 0
+INFO 2023-09-09 09:12:56,193 basehttp 9857 140695780193856 "GET /hw4/product/2/ HTTP/1.1" 200 628
+WARNING 2023-09-09 09:12:56,275 log 9857 140695780193856 Not Found: /media/product_image/books_ODEUeiM.jpg
+WARNING 2023-09-09 09:12:56,276 basehttp 9857 140695780193856 "GET /media/product_image/books_ODEUeiM.jpg HTTP/1.1" 404 3557
+INFO 2023-09-09 09:13:01,910 basehttp 9857 140695780193856 "GET /hw4/update_product/2/ HTTP/1.1" 200 1905
+INFO 2023-09-09 09:13:12,925 basehttp 9857 140695780193856 "POST /hw4/update_product/2/ HTTP/1.1" 302 0
+INFO 2023-09-09 09:13:12,933 basehttp 9857 140695780193856 "GET /hw4/product/2/ HTTP/1.1" 200 628
+WARNING 2023-09-09 09:13:13,024 log 9857 140695780193856 Not Found: /media/product_image/books_GG3ELJ1.jpg
+WARNING 2023-09-09 09:13:13,025 basehttp 9857 140695780193856 "GET /media/product_image/books_GG3ELJ1.jpg HTTP/1.1" 404 3557
+WARNING 2023-09-09 09:13:24,934 log 9857 140695780193856 Not Found: /media/product_image/books_GG3ELJ1.jpg
+WARNING 2023-09-09 09:13:24,935 basehttp 9857 140695780193856 "GET /media/product_image/books_GG3ELJ1.jpg HTTP/1.1" 404 3557
+WARNING 2023-09-09 09:14:19,066 log 9857 140695780193856 Not Found: /media/product_image/books.jpg
+WARNING 2023-09-09 09:14:19,068 basehttp 9857 140695780193856 "GET /media/product_image/books.jpg HTTP/1.1" 404 3533
+INFO 2023-09-09 09:16:47,156 basehttp 9857 140695780193856 "GET /hw4/customer/2/ HTTP/1.1" 200 702
+INFO 2023-09-09 09:16:47,192 basehttp 9857 140695780193856 "GET /static/css/bootstrap.css HTTP/1.1" 304 0
+WARNING 2023-09-09 09:16:51,486 log 9857 140695780193856 Not Found: /hw4/orders/week/2023/36/2/
+WARNING 2023-09-09 09:16:51,487 basehttp 9857 140695780193856 "GET /hw4/orders/week/2023/36/2/ HTTP/1.1" 404 4783
+WARNING 2023-09-09 09:18:16,227 log 9857 140695780193856 Not Found: /hw4/update_product/
+WARNING 2023-09-09 09:18:16,231 basehttp 9857 140695780193856 "GET /hw4/update_product/ HTTP/1.1" 404 5021
+INFO 2023-09-09 09:18:21,485 basehttp 9857 140695780193856 "GET /hw4/update_product/3 HTTP/1.1" 301 0
+INFO 2023-09-09 09:18:21,512 basehttp 9857 140695771801152 "GET /hw4/update_product/3/ HTTP/1.1" 200 1905
+INFO 2023-09-09 09:19:14,148 basehttp 9857 140695771801152 "POST /hw4/update_product/3/ HTTP/1.1" 302 0
+INFO 2023-09-09 09:19:14,157 basehttp 9857 140695771801152 "GET /hw4/product/3/ HTTP/1.1" 200 622
+WARNING 2023-09-09 09:19:14,238 log 9857 140695771801152 Not Found: /media/product_image/default.png
+WARNING 2023-09-09 09:19:14,238 basehttp 9857 140695771801152 "GET /media/product_image/default.png HTTP/1.1" 404 3539
+WARNING 2023-09-09 09:19:57,581 log 9857 140695771801152 Not Found: /media/product_image/default.png
+WARNING 2023-09-09 09:19:57,583 basehttp 9857 140695771801152 "GET /media/product_image/default.png HTTP/1.1" 404 3539
+INFO 2023-09-09 09:23:03,358 basehttp 9857 140695771801152 "GET /hw4/update_product/3/ HTTP/1.1" 200 1905
+INFO 2023-09-09 09:23:11,179 basehttp 9857 140695771801152 "GET /hw4/product/3/ HTTP/1.1" 200 622
+WARNING 2023-09-09 09:23:11,223 log 9857 140695771801152 Not Found: /media/product_image/default.png
+WARNING 2023-09-09 09:23:11,227 basehttp 9857 140695771801152 "GET /media/product_image/default.png HTTP/1.1" 404 3539
+INFO 2023-09-09 09:25:14,754 autoreload 9857 140695833055232 /home/alevtin/GB/Flask/django/myproject/hw_4_app/views.py changed, reloading.
+INFO 2023-09-09 09:25:15,366 autoreload 10144 140182353682432 Watching for file changes with StatReloader
+INFO 2023-09-09 09:25:18,659 basehttp 10144 140182229612096 "GET / HTTP/1.1" 200 13
+INFO 2023-09-09 09:25:36,596 basehttp 10144 140182229612096 "GET /hw4/ HTTP/1.1" 200 41
+ERROR 2023-09-09 09:25:46,344 log 10144 140182229612096 Internal Server Error: /hw4/customer/5/
+Traceback (most recent call last):
+  File "/home/alevtin/GB/Flask/django/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/alevtin/GB/Flask/django/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+  File "/home/alevtin/GB/Flask/django/venv/lib/python3.10/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+  File "/home/alevtin/GB/Flask/django/venv/lib/python3.10/site-packages/django/template/response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+  File "/home/alevtin/GB/Flask/django/venv/lib/python3.10/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/alevtin/GB/Flask/django/venv/lib/python3.10/site-packages/django/template/base.py", line 175, in render
+    return self._render(context)
+  File "/home/alevtin/GB/Flask/django/venv/lib/python3.10/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/alevtin/GB/Flask/django/venv/lib/python3.10/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/alevtin/GB/Flask/django/venv/lib/python3.10/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/alevtin/GB/Flask/django/venv/lib/python3.10/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/home/alevtin/GB/Flask/django/venv/lib/python3.10/site-packages/django/template/loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "/home/alevtin/GB/Flask/django/venv/lib/python3.10/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/alevtin/GB/Flask/django/venv/lib/python3.10/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/alevtin/GB/Flask/django/venv/lib/python3.10/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/alevtin/GB/Flask/django/venv/lib/python3.10/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/home/alevtin/GB/Flask/django/venv/lib/python3.10/site-packages/django/template/loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "/home/alevtin/GB/Flask/django/venv/lib/python3.10/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/alevtin/GB/Flask/django/venv/lib/python3.10/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/alevtin/GB/Flask/django/venv/lib/python3.10/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/home/alevtin/GB/Flask/django/venv/lib/python3.10/site-packages/django/template/defaulttags.py", line 471, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/home/alevtin/GB/Flask/django/venv/lib/python3.10/site-packages/django/urls/base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "/home/alevtin/GB/Flask/django/venv/lib/python3.10/site-packages/django/urls/resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'yearly_orders' not found. 'yearly_orders' is not a valid view function or pattern name.
+ERROR 2023-09-09 09:25:46,348 basehttp 10144 140182229612096 "GET /hw4/customer/5/ HTTP/1.1" 500 164925
+ERROR 2023-09-09 09:27:17,839 log 10144 140182229612096 Internal Server Error: /hw4/customer/5/
+Traceback (most recent call last):
+  File "/home/alevtin/GB/Flask/django/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/alevtin/GB/Flask/django/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+  File "/home/alevtin/GB/Flask/django/venv/lib/python3.10/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+  File "/home/alevtin/GB/Flask/django/venv/lib/python3.10/site-packages/django/template/response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+  File "/home/alevtin/GB/Flask/django/venv/lib/python3.10/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/alevtin/GB/Flask/django/venv/lib/python3.10/site-packages/django/template/base.py", line 175, in render
+    return self._render(context)
+  File "/home/alevtin/GB/Flask/django/venv/lib/python3.10/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/alevtin/GB/Flask/django/venv/lib/python3.10/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/alevtin/GB/Flask/django/venv/lib/python3.10/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/alevtin/GB/Flask/django/venv/lib/python3.10/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/home/alevtin/GB/Flask/django/venv/lib/python3.10/site-packages/django/template/loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "/home/alevtin/GB/Flask/django/venv/lib/python3.10/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/alevtin/GB/Flask/django/venv/lib/python3.10/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/alevtin/GB/Flask/django/venv/lib/python3.10/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/alevtin/GB/Flask/django/venv/lib/python3.10/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/home/alevtin/GB/Flask/django/venv/lib/python3.10/site-packages/django/template/loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "/home/alevtin/GB/Flask/django/venv/lib/python3.10/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/alevtin/GB/Flask/django/venv/lib/python3.10/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/alevtin/GB/Flask/django/venv/lib/python3.10/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/home/alevtin/GB/Flask/django/venv/lib/python3.10/site-packages/django/template/defaulttags.py", line 471, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/home/alevtin/GB/Flask/django/venv/lib/python3.10/site-packages/django/urls/base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "/home/alevtin/GB/Flask/django/venv/lib/python3.10/site-packages/django/urls/resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'yearly_orders' not found. 'yearly_orders' is not a valid view function or pattern name.
+ERROR 2023-09-09 09:27:17,841 basehttp 10144 140182229612096 "GET /hw4/customer/5/ HTTP/1.1" 500 165062
+INFO 2023-09-09 09:27:32,713 basehttp 10144 140182229612096 "GET /hw4/customer/5/ HTTP/1.1" 200 502
+WARNING 2023-09-09 09:27:45,196 log 10144 140182229612096 Not Found: /hw4/product+/5/
+WARNING 2023-09-09 09:27:45,197 basehttp 10144 140182229612096 "GET /hw4/product+/5/ HTTP/1.1" 404 4319
+INFO 2023-09-09 09:27:55,105 basehttp 10144 140182229612096 "GET /hw4/product/5/ HTTP/1.1" 200 608
+WARNING 2023-09-09 09:27:55,155 log 10144 140182229612096 Not Found: /media/default.png
+WARNING 2023-09-09 09:27:55,156 basehttp 10144 140182229612096 "GET /media/default.png HTTP/1.1" 404 3497
+INFO 2023-09-09 09:28:00,959 basehttp 10144 140182229612096 "GET /hw4/update_product/5/ HTTP/1.1" 200 1905
+INFO 2023-09-09 09:28:10,868 basehttp 10144 140182229612096 "POST /hw4/update_product/5/ HTTP/1.1" 302 0
+INFO 2023-09-09 09:28:10,876 basehttp 10144 140182229612096 "GET /hw4/product/5/ HTTP/1.1" 200 608
+INFO 2023-09-09 09:28:10,944 basehttp 10144 140182221219392 "GET /static/css/bootstrap.css HTTP/1.1" 304 0
+WARNING 2023-09-09 09:28:10,949 log 10144 140182229612096 Not Found: /media/default.png
+WARNING 2023-09-09 09:28:10,950 basehttp 10144 140182229612096 "GET /media/default.png HTTP/1.1" 404 3497
+INFO 2023-09-09 09:28:14,214 basehttp 10144 140182229612096 "GET /hw4/update_product/5/ HTTP/1.1" 200 1905
+INFO 2023-09-09 09:28:33,900 basehttp 10144 140182229612096 "POST /hw4/update_product/5/ HTTP/1.1" 302 0
+INFO 2023-09-09 09:28:33,910 basehttp 10144 140182229612096 "GET /hw4/product/5/ HTTP/1.1" 200 628
+WARNING 2023-09-09 09:28:33,999 log 10144 140182229612096 Not Found: /media/product_image/books_ACJx5zA.jpg
+WARNING 2023-09-09 09:28:34,000 basehttp 10144 140182229612096 "GET /media/product_image/books_ACJx5zA.jpg HTTP/1.1" 404 3557
+WARNING 2023-09-09 09:28:52,586 log 10144 140182229612096 Not Found: /media/product_image/books_ACJx5zA.jpg
+WARNING 2023-09-09 09:28:52,588 basehttp 10144 140182229612096 "GET /media/product_image/books_ACJx5zA.jpg HTTP/1.1" 404 3557
